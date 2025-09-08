@@ -20,8 +20,24 @@
 </section>
 
 
+<!-- Banner principal tipo botón -->
+<section class="container mx-auto px-4 py-8">
+  <div class="max-w-5xl mx-auto">
+    <div class="rounded-3xl shadow-xl cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-2xl" (click)="toggleSteps()">
+      <img 
+        src="images/banner-principal.png" 
+        alt="Banner Principal - Proceso de Matrícula"
+        class="w-full h-auto rounded-3xl object-cover"
+        style="height: auto;"
+      />
+    </div>
+  </div>
+</section>
+
 <!-- Pasos de matrícula -->
-<main class="container mx-auto px-4 py-12">
+<main class="container mx-auto px-4 py-12 transition-all duration-700 ease-in-out" 
+      *ngIf="showSteps()"
+      [ngClass]="showSteps() ? 'animate-slideInDown' : 'animate-slideOutUp'">
   <div class="max-w-4xl mx-auto">
     <div class="relative">
       <div *ngFor="let step of steps; let isLast = last; let isFirst = first" class="relative">
@@ -58,7 +74,7 @@
   <div class="modal-overlay" [ngClass]="closing() ? 'animate-fadeOut' : 'animate-fadeIn'" (click)="hideDialog()"></div>
   
   <!-- Modal -->
-  <div class="relative bg-white rounded-lg shadow-xl w-[95vw] max-w-[1200px] max-h-[80vh] overflow-hidden" [ngClass]="closing() ? 'animate-scaleOut' : 'animate-scaleIn'">
+  <div class="relative bg-white rounded-lg shadow-xl w-[95vw] max-w-[1700px] max-h-[90vh] overflow-hidden" [ngClass]="closing() ? 'animate-scaleOut' : 'animate-scaleIn'">
     <!-- Header -->
     <div class="bg-usco-vino text-white px-6 py-4 flex justify-between items-center">
       <h3 class="text-lg font-usco-condensed-bold">
@@ -70,7 +86,7 @@
     </div>
     
     <!-- Contenido -->
-    <div class="overflow-y-auto max-h-[70vh]" *ngIf="selectedStep()">
+    <div class="overflow-y-auto max-h-[75vh]" *ngIf="selectedStep()">
       <!-- Solo mostrar PDFs para el paso 1 -->
       <div *ngIf="selectedStep()!.number === 1 && selectedStep()!.pdfs && selectedStep()!.pdfs!.length > 0" class="p-4">
         <!-- Listado horizontal de sedes -->
@@ -92,7 +108,7 @@
         </div>
         
         <!-- Sección de la sede seleccionada -->
-        <div *ngIf="selectedStep()!.pdfs && selectedStep()!.pdfs![selectedPdfIndex()]" class="border border-usco-gris-lighter rounded-lg overflow-hidden shadow-lg">
+        <div *ngIf="selectedStep()!.pdfs && selectedStep()!.pdfs![selectedPdfIndex()]" class="rounded-lg overflow-hidden shadow-lg">
           <!-- Encabezado de la sede -->
           <div class="bg-usco-vino text-white p-4">
             <div class="flex justify-between items-center">

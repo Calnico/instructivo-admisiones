@@ -31,6 +31,7 @@ export class App implements AfterViewInit {
   protected currentPdfUrl = signal<string | null>(null);
   protected selectedPdfIndex = signal<number>(0);
   protected safePdfUrl = signal<SafeResourceUrl | null>(null);
+  protected showSteps = signal<boolean>(false);
   
   private platformId = inject(PLATFORM_ID);
   private sanitizer = inject(DomSanitizer);
@@ -183,5 +184,11 @@ export class App implements AfterViewInit {
         document.body.style.overflow = 'auto';
       }
     }, 300);
+  }
+
+  toggleSteps() {
+    if (!this.showSteps()) {
+      this.showSteps.set(true);
+    }
   }
 }

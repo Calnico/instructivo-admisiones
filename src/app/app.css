@@ -1,0 +1,34 @@
+/* Animaciones para el despliegue de pasos */
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOutUp {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-50px) scale(0.95);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-150px) scale(0.8);
+  }
+}
+
+.animate-slideInDown {
+  animation: slideInDown 0.7s ease-in-out;
+}
+
+.animate-slideOutUp {
+  animation: slideOutUp 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
