@@ -1,1 +1,192 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+/* Paleta de colores institucional Universidad Surcolombiana */
+@layer base {
+  :root {
+    /* Vino tinto */
+    --usco-vino: #8F141B;
+    --usco-vino-light: #B15B60;
+    --usco-vino-lighter: #E3C5C6;
+    --usco-vino-lightest: #DDB8BA;
+    --usco-vino-pale: #F4E7E8;
+    --usco-vino-dark: #5C0E12;
+    
+    /* Gris */
+    --usco-gris: #4D626C;
+    --usco-gris-light: #839198;
+    --usco-gris-lighter: #A6B1B6;
+    --usco-gris-lightest: #DBE0E2;
+    --usco-gris-pale: #EDEFF0;
+    --usco-gris-dark: #1E262B;
+    
+    /* Ocre */
+    --usco-ocre: #DFD4A6;
+    --usco-ocre-light: #E5DDB8;
+    --usco-ocre-lighter: #EFEAD3;
+    --usco-ocre-lightest: #F5F2E4;
+    --usco-ocre-pale: #F9F6ED;
+    --usco-ocre-dark: #C7B363;
+  }
+}
+
+@layer components {
+  .modal-overlay {
+    @apply fixed inset-0;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Clases de colores institucionales */
+  .bg-usco-vino { background-color: var(--usco-vino); }
+  .bg-usco-vino-light { background-color: var(--usco-vino-light); }
+  .bg-usco-vino-lighter { background-color: var(--usco-vino-lighter); }
+  .bg-usco-vino-lightest { background-color: var(--usco-vino-lightest); }
+  .bg-usco-vino-pale { background-color: var(--usco-vino-pale); }
+  .bg-usco-vino-dark { background-color: var(--usco-vino-dark); }
+  
+  .bg-usco-gris { background-color: var(--usco-gris); }
+  .bg-usco-gris-light { background-color: var(--usco-gris-light); }
+  .bg-usco-gris-lighter { background-color: var(--usco-gris-lighter); }
+  .bg-usco-gris-lightest { background-color: var(--usco-gris-lightest); }
+  .bg-usco-gris-pale { background-color: var(--usco-gris-pale); }
+  .bg-usco-gris-dark { background-color: var(--usco-gris-dark); }
+  
+  .bg-usco-ocre { background-color: var(--usco-ocre); }
+  .bg-usco-ocre-light { background-color: var(--usco-ocre-light); }
+  .bg-usco-ocre-lighter { background-color: var(--usco-ocre-lighter); }
+  .bg-usco-ocre-lightest { background-color: var(--usco-ocre-lightest); }
+  .bg-usco-ocre-pale { background-color: var(--usco-ocre-pale); }
+  .bg-usco-ocre-dark { background-color: var(--usco-ocre-dark); }
+  
+  /* Clases de texto */
+  .text-usco-vino { color: var(--usco-vino); }
+  .text-usco-vino-light { color: var(--usco-vino-light); }
+  .text-usco-vino-dark { color: var(--usco-vino-dark); }
+  
+  .text-usco-gris { color: var(--usco-gris); }
+  .text-usco-gris-light { color: var(--usco-gris-light); }
+  .text-usco-gris-dark { color: var(--usco-gris-dark); }
+  
+  .text-usco-ocre { color: var(--usco-ocre); }
+  .text-usco-ocre-light { color: var(--usco-ocre-light); }
+  .text-usco-ocre-dark { color: var(--usco-ocre-dark); }
+  
+  /* Clases hover para colores institucionales */
+  .sede-button:hover {
+    background-color: var(--usco-ocre) !important;
+    border-color: var(--usco-ocre-dark) !important;
+    color: var(--usco-gris-dark) !important;
+  }
+  
+  .pdf-button:hover {
+    background-color: var(--usco-ocre-dark) !important;
+  }
+  
+  /* Gradientes institucionales */
+  .bg-gradient-vino {
+    background: linear-gradient(135deg, var(--usco-vino), var(--usco-vino-light));
+  }
+  
+  .bg-gradient-gris {
+    background: linear-gradient(135deg, var(--usco-gris), var(--usco-gris-light));
+  }
+  
+  .bg-gradient-ocre {
+    background: linear-gradient(135deg, var(--usco-ocre-dark), var(--usco-ocre));
+  }
+}
+
+body {
+  background-color: var(--usco-gris-pale);
+  min-height: 100vh;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+/* Clases de tipografía institucional */
+@layer components {
+  .font-usco {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  }
+  
+  .font-usco-condensed {
+    font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+  }
+  
+  .font-usco-light {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+  }
+  
+  .font-usco-bold {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+  }
+  
+  .font-usco-condensed-light {
+    font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+  }
+  
+  .font-usco-condensed-bold {
+    font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+  }
+  
+  /* Animaciones del modal */
+  .animate-fadeIn {
+    animation: fadeIn 0.3s ease-out forwards;
+  }
+  
+  .animate-fadeOut {
+    animation: fadeOut 0.3s ease-in forwards;
+  }
+  
+  .animate-scaleIn {
+    animation: scaleIn 0.4s ease-out forwards;
+  }
+  
+  .animate-scaleOut {
+    animation: scaleOut 0.3s ease-in forwards;
+  }
+}
+
+/* Keyframes para las animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes scaleOut {
+  from {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.9) translateY(-10px);
+  }
+}
