@@ -31,30 +31,19 @@
         <!-- Estructura uniforme para todos los pasos -->
         <div class="flex items-center mb-8">
           <!-- Número fuera del banner -->
-          <div class="w-12 h-12 text-white rounded-full flex items-center justify-center font-bold text-lg mr-8 flex-shrink-0 relative z-10"
-               [ngClass]="{
-                 'bg-usco-vino': step.number === 1,
-                 'bg-usco-gris': step.number === 2,
-                 'bg-usco-ocre-dark': step.number === 3,
-                 'bg-indigo-700': step.number === 4,
-                 'bg-emerald-700': step.number === 5,
-                 'bg-slate-700': step.number === 6,
-                 'bg-amber-700': step.number === 7,
-                 'bg-cyan-700': step.number === 8,
-                 'bg-stone-700': step.number === 9
-               }">
+          <div class="w-12 h-12 text-white rounded-full flex items-center justify-center font-bold text-lg mr-8 flex-shrink-0 relative z-10 bg-usco-vino">
             {{ step.number }}
           </div>
           
           <!-- Banner para todos los pasos con imagen -->
-          <div class="rounded-xl shadow-xl cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+          <div class="rounded-3xl shadow-xl cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
             style="width: calc(100% - 80px);"
             (click)="showDialog(step)"
           >
             <img 
               [src]="'images/paso-' + step.number + '.png'" 
               [alt]="step.title"
-              class="w-full h-auto rounded-xl object-cover"
+              class="w-full h-auto rounded-3xl object-cover"
             />
           </div>
         </div>
@@ -96,7 +85,6 @@
                 'bg-usco-vino text-white border-usco-vino shadow-lg' : 
                 'bg-white text-usco-gris border-usco-gris-lighter'">
               <div class="text-center">
-                <div class="text-2xl mb-2">🏛️</div>
                 <div class="font-usco-bold text-sm">{{ pdf.name.replace('SEDE ', '') }}</div>
               </div>
             </button>
