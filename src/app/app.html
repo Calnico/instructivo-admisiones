@@ -56,22 +56,32 @@
 
 <!-- Pasos de matrícula -->
 <main class="container mx-auto px-4 py-12">
-  <div class="max-w-4xl mx-auto">
+  <div class="max-w-6xl mx-auto">
     <div class="relative">
       <div *ngFor="let step of steps; let isLast = last; let isFirst = first" class="relative">
         <!-- Línea vertical conectora para cada paso (excepto el último) -->
         <div *ngIf="!isLast" class="absolute left-6 w-0.5 bg-usco-ocre-dark" 
-             style="top: 48px; height: calc(100% + 32px);"></div>
+             [ngClass]="{'hidden md:block': true}"
+             [ngStyle]="isFirst ? {top: '62px', height: 'calc(100% + 18px)'} : {top: '48px', height: 'calc(100% + 48px)'}">
+        </div>
+        <!-- Línea para móvil -->
+        <div *ngIf="!isLast" class="absolute left-6 w-0.5 bg-usco-ocre-dark block md:hidden" 
+             [ngStyle]="isFirst ? {top: '48px', height: 'calc(100% + 32px)'} : {top: '48px', height: 'calc(100% + 32px)'}">
+        </div>
         <!-- Estructura uniforme para todos los pasos -->
         <div class="flex items-center mb-8">
           <!-- Número fuera del banner -->
-          <div class="w-12 h-12 text-white rounded-full flex items-center justify-center font-bold text-lg mr-8 flex-shrink-0 relative z-10 bg-usco-vino">
+          <div class="w-12 h-12 text-white rounded-full flex items-center justify-center font-bold text-lg mr-8 md:mr-12 flex-shrink-0 relative z-10 bg-usco-vino">
             {{ step.number }}
           </div>
           
+          <!-- Flecha - solo en desktop -->
+          <div class="hidden md:flex text-usco-vino text-6xl mr-16 flex-shrink-0 w-8 items-center justify-center">
+            →
+          </div>
+          
           <!-- Banner para todos los pasos con imagen -->
-          <div class="rounded-3xl shadow-xl cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-            style="width: calc(100% - 80px);"
+          <div class="rounded-3xl shadow-xl cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-2xl flex-1"
             (click)="showDialog(step)"
           >
             <img 
