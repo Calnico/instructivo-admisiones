@@ -31,7 +31,9 @@ export class App implements AfterViewInit {
   protected currentPdfUrl = signal<string | null>(null);
   protected selectedPdfIndex = signal<number>(0);
   protected safePdfUrl = signal<SafeResourceUrl | null>(null);
-  protected showSteps = signal<boolean>(false);
+  protected showSteps = signal<boolean>(true);
+  protected visibleTerms = signal(false);
+  protected closingTerms = signal(false);
   
   private platformId = inject(PLATFORM_ID);
   private sanitizer = inject(DomSanitizer);
@@ -190,5 +192,28 @@ export class App implements AfterViewInit {
     if (!this.showSteps()) {
       this.showSteps.set(true);
     }
+  }
+
+  showTermsDialog() {
+    this.closingTerms.set(false);
+    this.visibleTerms.set(true);
+    
+    // Prevenir scroll en el fondo
+    if (this.isBrowser()) {
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  hideTermsDialog() {
+    this.closingTerms.set(true);
+    setTimeout(() => {
+      this.visibleTerms.set(false);
+      this.closingTerms.set(false);
+      
+      // Restaurar scroll en el fondo
+      if (this.isBrowser()) {
+        document.body.style.overflow = 'auto';
+      }
+    }, 300);
   }
 }

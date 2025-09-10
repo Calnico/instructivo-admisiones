@@ -7,15 +7,35 @@
 />
 <div style="display:none; color:red; font-weight:bold; padding: 10px;">LOGO NO CARGA - USCO</div>
 
-<!-- Título principal -->
+<!-- Botones principales -->
 <section class="py-8">
   <div class="container mx-auto px-4">
-    <h1 class="text-3xl md:text-4xl font-usco-condensed-bold text-center text-usco-vino-dark mb-2">
-      Proceso de Admisiones PERÍODO 2026-1
-    </h1>
-    <p class="text-center text-usco-gris text-lg font-usco">
-      Sigue estos pasos para completar tu matrícula exitosamente
+    <p class="text-center text-usco-gris text-lg font-usco mb-6">
+      <strong>Bienvenido(a) apreciado(a) aspirante a la Universidad Surcolombiana, <br>reciba un cordial saludo.</strong>
     </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-6xl mx-auto">
+      <a href="https://usco.edu.co/inscripciones-2025-2/documentos/ACUERDO-CA-004-DE-2025-CONSEJO-ACADEMICO.pdf" target="_blank" class="bg-gray-700 hover:bg-gray-800 text-white font-usco-bold py-4 px-6 rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl text-center block">
+        Acuerdo CA Número 004 del 25 de Marzo de 2025
+      </a>
+      <button (click)="showTermsDialog()" class="bg-gray-700 hover:bg-gray-800 text-white font-usco-bold py-4 px-6 rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl text-center cursor-pointer">
+        Términos de Referencia Legal del Proceso de Admisiones
+      </button>
+      <a href="https://www.usco.edu.co/es/faq/admisiones/" target="_blank" class="bg-gray-700 hover:bg-gray-800 text-white font-usco-bold py-4 px-6 rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl flex items-center justify-center">
+        Preguntas Frecuentes
+      </a>
+    </div>
+    
+    <!-- Cuadro de Política de Gratuidad -->
+    <div class="max-w-6xl mx-auto mt-8">
+      <div class="bg-usco-gris-pale border border-usco-gris-lighter rounded-lg p-6">
+        <h3 class="text-lg font-usco-condensed-bold text-usco-vino mb-3">
+          POLÍTICA DE GRATUIDAD EN LA MATRÍCULA
+        </h3>
+        <p class="text-usco-gris-dark font-usco">
+          La Política de Gratuidad se aplica conforme el Reglamento Operativo comunicado por el Ministerio de Educación Nacional, el cual puede consultar en el siguiente <a href="https://www.usco.edu.co/documento/416416" target="_blank" class="text-usco-vino font-usco-bold underline hover:text-usco-vino-dark">Link</a>
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -23,7 +43,7 @@
 <!-- Banner principal tipo botón -->
 <section class="container mx-auto px-4 py-8">
   <div class="max-w-5xl mx-auto">
-    <div class="rounded-3xl shadow-xl cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-2xl" (click)="toggleSteps()">
+    <div class="rounded-3xl shadow-xl">
       <img 
         src="images/banner-principal.png" 
         alt="Banner Principal - Proceso de Matrícula"
@@ -35,9 +55,7 @@
 </section>
 
 <!-- Pasos de matrícula -->
-<main class="container mx-auto px-4 py-12 transition-all duration-700 ease-in-out" 
-      *ngIf="showSteps()"
-      [ngClass]="showSteps() ? 'animate-slideInDown' : 'animate-slideOutUp'">
+<main class="container mx-auto px-4 py-12">
   <div class="max-w-4xl mx-auto">
     <div class="relative">
       <div *ngFor="let step of steps; let isLast = last; let isFirst = first" class="relative">
@@ -74,24 +92,20 @@
   <div class="modal-overlay" [ngClass]="closing() ? 'animate-fadeOut' : 'animate-fadeIn'" (click)="hideDialog()"></div>
   
   <!-- Modal -->
-  <div class="relative bg-white rounded-lg shadow-xl w-[95vw] max-w-[1700px] max-h-[90vh] overflow-hidden" [ngClass]="closing() ? 'animate-scaleOut' : 'animate-scaleIn'">
+  <div class="relative bg-white rounded-lg shadow-xl w-[95vw] max-w-[1700px] h-[90vh] flex flex-col" [ngClass]="closing() ? 'animate-scaleOut' : 'animate-scaleIn'">
     <!-- Header -->
-    <div class="bg-usco-vino text-white px-6 py-4 flex justify-between items-center">
+    <div class="bg-usco-vino text-white px-6 py-4">
       <h3 class="text-lg font-usco-condensed-bold">
         Paso {{ selectedStep()?.number || '' }}: {{ selectedStep()?.title || '' }}
       </h3>
-      <button (click)="hideDialog()" class="text-white hover:text-usco-vino-pale text-xl font-bold">
-        ×
-      </button>
     </div>
     
     <!-- Contenido -->
-    <div class="overflow-y-auto max-h-[75vh]" *ngIf="selectedStep()">
+    <div class="overflow-y-auto flex-1" *ngIf="selectedStep()">
       <!-- Solo mostrar PDFs para el paso 1 -->
       <div *ngIf="selectedStep()!.number === 1 && selectedStep()!.pdfs && selectedStep()!.pdfs!.length > 0" class="p-4">
         <!-- Listado horizontal de sedes -->
         <div class="mb-6">
-          <h4 class="text-lg font-usco-condensed-bold mb-4 text-usco-vino text-center">Selecciona tu sede de interés</h4>
           <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
             <button 
               *ngFor="let pdf of selectedStep()!.pdfs!; let i = index"
@@ -101,45 +115,28 @@
                 'bg-usco-vino text-white border-usco-vino shadow-lg' : 
                 'bg-white text-usco-gris border-usco-gris-lighter'">
               <div class="text-center">
-                <div class="font-usco-bold text-sm">{{ pdf.name.replace('SEDE ', '') }}</div>
+                <div class="font-usco-bold text-sm">{{ pdf.name }}</div>
               </div>
             </button>
           </div>
         </div>
         
-        <!-- Sección de la sede seleccionada -->
-        <div *ngIf="selectedStep()!.pdfs && selectedStep()!.pdfs![selectedPdfIndex()]" class="rounded-lg overflow-hidden shadow-lg">
-          <!-- Encabezado de la sede -->
-          <div class="bg-usco-vino text-white p-4">
-            <div class="flex justify-between items-center">
-              <h5 class="font-usco-condensed-bold text-xl">{{ selectedStep()!.pdfs![selectedPdfIndex()].name }}</h5>
-              <a [href]="selectedStep()!.pdfs![selectedPdfIndex()].url" 
-                 target="_blank" 
-                 class="bg-white text-usco-vino px-3 py-1 rounded font-usco text-sm hover:bg-usco-vino-pale">
-                📄 Abrir PDF
-              </a>
-            </div>
+        <!-- Contenido del PDF -->
+        <div *ngIf="selectedStep()!.pdfs && selectedStep()!.pdfs![selectedPdfIndex()]" class="bg-white">
+          <div *ngIf="!isBrowser()" class="flex items-center justify-center h-[400px] bg-gray-100 rounded">
+            <p class="text-usco-gris">Cargando visor PDF...</p>
           </div>
           
-          <!-- Contenido del PDF -->
-          <div class="bg-white p-4">
-            <div *ngIf="!isBrowser()" class="flex items-center justify-center h-[400px] bg-gray-100 rounded">
-              <p class="text-usco-gris">Cargando visor PDF...</p>
-            </div>
-            
-            <div *ngIf="isBrowser()">
-              
-              <!-- Visor PDF con embed simple (como en PHP) -->
-              <div class="border rounded bg-white p-4">
-                <!-- Embed PDF directo -->
-                <embed 
-                  [src]="safePdfUrl()" 
-                  width="98%" 
-                  height="630" 
-                  type="application/pdf"
-                  class="rounded border" />
-                
-              </div>
+          <div *ngIf="isBrowser()">
+            <!-- Visor PDF con embed simple (como en PHP) -->
+            <div class="border rounded bg-white p-4">
+              <!-- Embed PDF directo -->
+              <embed 
+                [src]="safePdfUrl()" 
+                width="98%" 
+                height="630" 
+                type="application/pdf"
+                class="rounded border" />
             </div>
           </div>
         </div>
@@ -178,9 +175,68 @@
     </div>
     
     <!-- Footer -->
-    <div class="bg-usco-gris-pale px-6 py-4 flex justify-end border-t border-usco-gris-lightest">
+    <div class="bg-usco-gris-pale px-6 py-4 flex justify-between items-center border-t border-usco-gris-lightest flex-shrink-0">
+      <a *ngIf="selectedStep()?.number === 1 && selectedStep()?.pdfs && selectedStep()?.pdfs![selectedPdfIndex()]" 
+         [href]="selectedStep()!.pdfs![selectedPdfIndex()].url" 
+         target="_blank" 
+         class="bg-usco-vino hover:bg-usco-vino-dark text-white px-4 py-2 rounded-md transition-colors duration-200 font-usco-bold">
+        Ver PDF de {{ selectedStep()!.pdfs![selectedPdfIndex()].name }}
+      </a>
+      <div *ngIf="selectedStep()?.number !== 1"></div>
       <button 
         (click)="hideDialog()"
+        class="bg-usco-gris hover:bg-usco-gris-dark text-white px-4 py-2 rounded-md transition-colors duration-200 font-usco-bold"
+      >
+        Cerrar
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal para Términos de Referencia Legal -->
+<div *ngIf="visibleTerms()" class="fixed inset-0 z-50 flex items-center justify-center" [ngClass]="closingTerms() ? 'animate-fadeOut' : 'animate-fadeIn'">
+  <!-- Fondo opacado -->
+  <div class="modal-overlay" [ngClass]="closingTerms() ? 'animate-fadeOut' : 'animate-fadeIn'" (click)="hideTermsDialog()"></div>
+  
+  <!-- Modal -->
+  <div class="relative bg-white rounded-lg shadow-xl w-[95vw] max-w-[1200px] h-[90vh] flex flex-col" [ngClass]="closingTerms() ? 'animate-scaleOut' : 'animate-scaleIn'">
+    <!-- Header -->
+    <div class="bg-usco-vino text-white px-6 py-4">
+      <h3 class="text-lg font-usco-condensed-bold">
+        Términos de Referencia Legal del Proceso de Admisiones
+      </h3>
+    </div>
+    
+    <!-- Contenido -->
+    <div class="overflow-y-auto flex-1 p-6">
+      
+      <div class="space-y-4 text-usco-gris-dark font-usco leading-relaxed">
+        <p class="font-usco-bold text-usco-vino">
+          Sólo se aceptan las pruebas de Estado (ICFES o Saber 11) con diez (10) años de vigencia, es decir, a partir del año 2016.
+        </p>
+        <p>
+          • En su calidad de aspirante a ingresar a la Universidad Surcolombiana, asume la responsabilidad legal de leer completamente para conocer el Reglamento de Inscripción, Admisión y Matrícula - Acuerdo Número 003 del 12 de abril de 2016 expedido por el Consejo Académico, normatividad que fija las condiciones, requisitos y demás normas y disposiciones internas que establece la Universidad Surcolombiana para el proceso de admisión a los Programas Académicos de Pregrado que ofrece. En consecuencia, es su absoluta responsabilidad atender todo el contenido del presente INSTRUCTIVO GUÍA PASO A PASO.
+        </p>
+        
+        <p>
+          • En su calidad de aspirante, asume la responsabilidad de ingresar toda la información solicitada, la cual debe ser completa, exacta, verídica y bajo la gravedad de juramento; por lo tanto, no habrá lugar a solicitar a la Universidad modificaciones o correcciones.
+        </p>
+        
+        <p>
+          • Es de indicar que, la Universidad Surcolombiana ha implementado la virtualidad para el proceso de la matrícula financiera y académica; ante lo cual, si usted adquiere la calidad de admitido(a) tiene la absoluta responsabilidad de cargar la documentación reglamentaria a través de la plataforma tecnológica dispuesta para tal fin, en las fechas establecidas en cada uno de los llamados. En el numeral 9 de este Instructivo Guía Paso a Paso se indica la documentación que debe tener lista a cargar cuando sea admitido(a). De no cumplir con los requisitos y documentación exigida para la matrícula financiera y académica, perderá el cupo.
+        </p>
+        
+        <p>
+          Aspirante, para la Universidad Surcolombiana es grato que desee ser parte de la comunidad universitaria; por ello, es indispensable que lea la totalidad de la información que se ha publicado para usted. Realice la completa lectura de los nueve (9) pasos de este INSTRUCTIVO GUÍA y en consecuencia tenga la suficiente claridad del proceso de inscripción, admisión y matrícula.
+        </p>
+        
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="bg-usco-gris-pale px-6 py-4 flex justify-end border-t border-usco-gris-lightest flex-shrink-0">
+      <button 
+        (click)="hideTermsDialog()"
         class="bg-usco-gris hover:bg-usco-gris-dark text-white px-4 py-2 rounded-md transition-colors duration-200 font-usco-bold"
       >
         Cerrar
