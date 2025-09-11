@@ -10,7 +10,7 @@
 <!-- Botones principales -->
 <section class="py-8">
   <div class="container mx-auto px-4">
-    <p class="text-center text-usco-gris text-lg font-usco mb-6">
+    <p class="text-center text-black text-2xl font-usco mb-6">
       <strong>Bienvenido(a) apreciado(a) aspirante a la Universidad Surcolombiana, <br>reciba un cordial saludo.</strong>
     </p>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-6xl mx-auto">
@@ -25,16 +25,16 @@
       </a>
     </div>
     
-    <!-- Cuadro de Política de Gratuidad -->
+    <!-- Botón de Política de Gratuidad -->
     <div class="max-w-6xl mx-auto mt-8">
-      <div class="bg-usco-gris-pale border border-usco-gris-lighter rounded-lg p-6">
+      <button (click)="showGratuidadDialog()" class="w-full bg-usco-gris-pale border border-usco-gris-lighter rounded-lg p-6 cursor-pointer hover:shadow-md transition-shadow duration-200 text-left">
         <h3 class="text-lg font-usco-condensed-bold text-usco-vino mb-3">
           POLÍTICA DE GRATUIDAD EN LA MATRÍCULA
         </h3>
         <p class="text-usco-gris-dark font-usco">
-          La Política de Gratuidad se aplica conforme el Reglamento Operativo comunicado por el Ministerio de Educación Nacional, el cual puede consultar en el siguiente <a href="https://www.usco.edu.co/documento/416416" target="_blank" class="text-usco-vino font-usco-bold underline hover:text-usco-vino-dark">Link</a>
+          La Política de Gratuidad se aplica conforme el Reglamento Operativo comunicado por el Ministerio de Educación Nacional
         </p>
-      </div>
+      </button>
     </div>
   </div>
 </section>
@@ -106,7 +106,7 @@
     <!-- Header -->
     <div class="bg-usco-vino text-white px-6 py-4">
       <h3 class="text-lg font-usco-condensed-bold">
-        Paso {{ selectedStep()?.number || '' }}: {{ selectedStep()?.title || '' }}
+        {{ selectedStep()?.title || '' }}
       </h3>
     </div>
     
@@ -120,10 +120,10 @@
             <button 
               *ngFor="let pdf of selectedStep()!.pdfs!; let i = index"
               (click)="selectPdf(i, pdf.url)"
-              class="sede-button p-4 rounded-lg border-2 transition-all duration-200 hover:scale-105"
+              class="sede-button p-4 rounded-lg border-2 transition-all duration-200 hover:scale-105 hover:shadow-lg"
               [ngClass]="selectedPdfIndex() === i ? 
                 'bg-usco-vino text-white border-usco-vino shadow-lg' : 
-                'bg-white text-usco-gris border-usco-gris-lighter'">
+                'bg-white text-usco-gris border-usco-gris-lighter hover:bg-usco-ocre hover:text-black hover:border-usco-ocre'">
               <div class="text-center">
                 <div class="font-usco-bold text-sm">{{ pdf.name }}</div>
               </div>
@@ -151,13 +151,40 @@
           </div>
         </div>
       </div>
+
+      <!-- Mostrar modalidades para el paso 2 -->
+      <div *ngIf="selectedStep()!.number === 2 && selectedStep()!.modalidades && selectedStep()!.modalidades!.length > 0" class="p-4">
+        <!-- Listado horizontal de modalidades -->
+        <div class="mb-6">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <button 
+              *ngFor="let modalidad of selectedStep()!.modalidades!; let i = index"
+              (click)="selectModalidad(i)"
+              class="sede-button p-4 rounded-lg border-2 transition-all duration-200 hover:scale-105 hover:shadow-lg"
+              [ngClass]="selectedModalidadIndex() === i ? 
+                'bg-usco-vino text-white border-usco-vino shadow-lg' : 
+                'bg-white text-usco-gris border-usco-gris-lighter hover:bg-usco-ocre hover:text-black hover:border-usco-ocre'">
+              <div class="text-center">
+                <div class="font-usco-bold text-sm">{{ modalidad.name }}</div>
+              </div>
+            </button>
+          </div>
+        </div>
+        
+        <!-- Contenido de la modalidad -->
+        <div *ngIf="selectedStep()!.modalidades && selectedStep()!.modalidades![selectedModalidadIndex()]" class="bg-white">
+          <div class="border rounded bg-white p-6">
+            <div class="text-usco-gris-dark leading-relaxed font-usco space-y-4" [innerHTML]="formatText(selectedStep()!.modalidades![selectedModalidadIndex()].content)"></div>
+          </div>
+        </div>
+      </div>
       
       <!-- Para otros pasos, mostrar contenido normal -->
-      <div *ngIf="selectedStep()!.number !== 1" class="p-6">
+      <div *ngIf="selectedStep()!.number !== 1 && selectedStep()!.number !== 2" class="p-6">
         <!-- Descripción detallada -->
         <div *ngIf="selectedStep()!.detailedInfo" class="mb-6">
           <h4 class="text-lg font-usco-condensed-bold mb-3 text-usco-vino">Información detallada</h4>
-          <p class="text-usco-gris-dark leading-relaxed font-usco">{{ selectedStep()!.detailedInfo }}</p>
+          <div class="text-usco-gris-dark leading-relaxed font-usco space-y-4" [innerHTML]="formatText(selectedStep()!.detailedInfo)"></div>
         </div>
 
         <!-- Requisitos -->
@@ -195,7 +222,7 @@
       <div *ngIf="selectedStep()?.number !== 1"></div>
       <button 
         (click)="hideDialog()"
-        class="bg-usco-gris hover:bg-usco-gris-dark text-white px-4 py-2 rounded-md transition-colors duration-200 font-usco-bold"
+        class="bg-usco-ocre hover:bg-usco-ocre-dark text-black px-4 py-2 rounded-md transition-colors duration-200 font-usco-bold btn-cerrar-animated"
       >
         Cerrar
       </button>
@@ -221,8 +248,8 @@
     <div class="overflow-y-auto flex-1 p-6">
       
       <div class="space-y-4 text-usco-gris-dark font-usco leading-relaxed">
-        <p class="font-usco-bold text-usco-vino">
-          Sólo se aceptan las pruebas de Estado (ICFES o Saber 11) con diez (10) años de vigencia, es decir, a partir del año 2016.
+        <p class="font-usco-bold text-usco-vino text-xl font-bold">
+          Sólo se aceptan las pruebas de Estado (ICFES o Saber 11) con diez (10) años de vigencia, es decir, a partir del año 2015.
         </p>
         <p>
           • En su calidad de aspirante a ingresar a la Universidad Surcolombiana, asume la responsabilidad legal de leer completamente para conocer el Reglamento de Inscripción, Admisión y Matrícula - Acuerdo Número 003 del 12 de abril de 2016 expedido por el Consejo Académico, normatividad que fija las condiciones, requisitos y demás normas y disposiciones internas que establece la Universidad Surcolombiana para el proceso de admisión a los Programas Académicos de Pregrado que ofrece. En consecuencia, es su absoluta responsabilidad atender todo el contenido del presente INSTRUCTIVO GUÍA PASO A PASO.
@@ -247,7 +274,161 @@
     <div class="bg-usco-gris-pale px-6 py-4 flex justify-end border-t border-usco-gris-lightest flex-shrink-0">
       <button 
         (click)="hideTermsDialog()"
-        class="bg-usco-gris hover:bg-usco-gris-dark text-white px-4 py-2 rounded-md transition-colors duration-200 font-usco-bold"
+        class="bg-usco-ocre hover:bg-usco-ocre-dark text-black px-4 py-2 rounded-md transition-colors duration-200 font-usco-bold btn-cerrar-animated"
+      >
+        Cerrar
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal para Política de Gratuidad -->
+<div *ngIf="visibleGratuidad()" class="fixed inset-0 z-50 flex items-center justify-center" [ngClass]="closingGratuidad() ? 'animate-fadeOut' : 'animate-fadeIn'">
+  <!-- Fondo opacado -->
+  <div class="modal-overlay" [ngClass]="closingGratuidad() ? 'animate-fadeOut' : 'animate-fadeIn'" (click)="hideGratuidadDialog()"></div>
+  
+  <!-- Modal -->
+  <div class="relative bg-white rounded-lg shadow-xl w-[95vw] max-w-[1000px] h-[80vh] flex flex-col" [ngClass]="closingGratuidad() ? 'animate-scaleOut' : 'animate-scaleIn'">
+    <!-- Header -->
+    <div class="bg-usco-vino text-white px-6 py-4">
+      <h3 class="text-lg font-usco-condensed-bold">
+        Política de Gratuidad en la Matrícula
+      </h3>
+    </div>
+    
+    <!-- Contenido -->
+    <div class="overflow-y-auto flex-1 p-6">
+      <div class="space-y-6 text-usco-gris-dark font-usco leading-relaxed">
+        
+        <!-- Encabezado -->
+        <div class="text-center">
+          <h2 class="font-usco-condensed-bold text-usco-vino text-xl mb-2">UNIVERSIDAD SURCOLOMBIANA</h2>
+          <h3 class="font-usco-condensed-bold text-usco-vino text-lg mb-2">POLÍTICA DE GRATUIDAD</h3>
+          <h4 class="font-usco-bold text-usco-gris-dark">INFORMACIÓN GENERAL</h4>
+        </div>
+
+        <!-- Requisitos -->
+        <div>
+          <h4 class="font-usco-bold text-usco-vino text-lg mb-3">REQUISITOS</h4>
+          <p class="mb-3">Para ser beneficiario(a) de la Política de Gratuidad en la Matrícula de Pregrado los ciudadanos deberán cumplir con los siguientes requisitos:</p>
+          <ol class="space-y-2 pl-4">
+            <li><strong>1.</strong> Estar matriculado(a) en un programa académico de pregrado (técnico profesional, tecnológico o universitario), en alguna de las 67 Instituciones de Educación Superior (IES) públicas y estar registrado en el SNIES.</li>
+            <li><strong>2.</strong> No tener título profesional universitario.</li>
+            <li><strong>3.</strong> Demostrar la pertenencia a alguno de los siguientes grupos:
+              <ul class="mt-2 ml-4 space-y-1">
+                <li>a) Estrato socioeconómico 1, 2, 3 o sin estrato.</li>
+                <li>b) Población indígena.</li>
+                <li>c) Población Rrom.</li>
+                <li>d) Comunidades negras, afrocolombianas, raizales y palenqueras.</li>
+                <li>e) Población víctima del conflicto.</li>
+                <li>f) Población con discapacidad.</li>
+                <li>g) Comunidades campesinas.</li>
+                <li>h) Población privada de la libertad.</li>
+                <li>i) Grupos A, B o C del Sisbén IV, en cualquiera de sus subgrupos.</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+
+        <!-- Valores que cubre -->
+        <div>
+          <h4 class="font-usco-bold text-usco-vino text-lg mb-3">¿QUÉ VALORES CUBRE EL BENEFICIO?</h4>
+          <p class="mb-3">El beneficio que se otorga en el marco de la Política de Gratuidad en la Matrícula consiste en el pago del valor de la matrícula ordinaria neta de los estudiantes de programas pregrado de las IES públicas.</p>
+          <p class="mb-3">La matrícula ordinaria neta corresponde al valor inicialmente liquidado por las IES públicas por concepto de matrícula</p>
+          <p class="mb-2">El beneficio no cubre la aplicación de los descuentos o apoyos a los que el estudiante tenga derecho tales como:</p>
+          <ul class="ml-4 space-y-1">
+            <li>- Votaciones por sufragio electoral.</li>
+            <li>- Becas.</li>
+            <li>- Apoyos de las entidades territoriales y/o de la misma institución de educación superior públicas u otras fuentes o conceptos.</li>
+          </ul>
+        </div>
+
+        <!-- Lo que no incluye -->
+        <div>
+          <h4 class="font-usco-bold text-usco-vino text-lg mb-3">EL BENEFICIO NO INCLUYE:</h4>
+          <ul class="ml-4 space-y-1">
+            <li>- El pago de derechos pecuniarios por cursos intersemestrales.</li>
+            <li>- Derechos de grado.</li>
+            <li>- Cobros complementarios (derechos complementarios).</li>
+            <li>- Extraordinarios.</li>
+            <li>- Extemporáneos.</li>
+            <li>- Administrativos (Fortalecimiento a la conectividad).</li>
+            <li>- Ningún otro derecho pecuniario o concepto que no esté explícitamente contemplado en el Reglamento Operativo vigente.</li>
+          </ul>
+        </div>
+
+        <!-- Duración -->
+        <div>
+          <h4 class="font-usco-bold text-usco-vino text-lg mb-3">¿CUÁNTO DURA EL BENEFICIO?</h4>
+          <p class="mb-3">El beneficio cubre el total de la duración de un programa académico de acuerdo al registro calificado registrado en SNIES.</p>
+          <p>Con el fin de promover la permanencia y graduación, la Política de Gratuidad en la Matricula cubrirá por rezago académico u otras figuras asociadas a la finalización del plan de estudios del programa, hasta un (1) periodo académico adicional para formación técnica y tecnológica y hasta dos (2) periodos académicos adicionales para formación profesional a los establecidos. Los periodos de rezago solo se asignarán a estudiantes que se les haya asignado el beneficio.</p>
+        </div>
+
+        <!-- Causales de terminación -->
+        <div>
+          <h4 class="font-usco-bold text-usco-vino text-lg mb-3">CAUSALES DE TERMINACIÓN DEL BENEFICIO DE LA POLÍTICA DE GRATUIDAD EN LA MATRÍCULA</h4>
+          <ol class="space-y-2 pl-4">
+            <li><strong>1.</strong> Por cumplimiento de la duración del beneficio según el Reglamento Operativo vigente.</li>
+            <li><strong>2.</strong> Cuando el beneficiario(a) haya accedido a la Política de Gratuidad en la Matrícula con información no veraz, o con documentos adulterados.</li>
+            <li><strong>3.</strong> Cuando pierda la condición de estudiante de acuerdo con los reglamentos internos de las IES, la cual deberá informarlo al Ministerio de Educación Nacional a través de la plantilla de caracterización.</li>
+            <li><strong>4.</strong> Obtener un título de profesional universitario.</li>
+            <li><strong>5.</strong> Por fallecimiento del estudiante.</li>
+          </ol>
+          
+          <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mt-4">
+            <p class="font-usco-bold mb-2">Nota 1</p>
+            <p class="mb-2">Si el estudiante recibe un título de pregrado en el Nivel profesional, perderá el beneficio automáticamente, así mismo, si el estudiante realiza cambio de IES, el beneficio no seguirá en la Universidad Surcolombiana.</p>
+            
+            <p class="font-usco-bold mb-2">Nota 2</p>
+            <p>Es de aclarar que los estudiantes podrán aplazar sus estudios sin que esto afecte la continuidad del beneficio de la Política de Gratuidad en la Matrícula, siempre que conserven la condición de estudiante conforme a los reglamentos de las IES públicas respectivas.</p>
+          </div>
+        </div>
+
+        <!-- Cambios de programa -->
+        <div>
+          <h4 class="font-usco-bold text-usco-vino text-lg mb-3">CAMBIOS DE PROGRAMA O IES</h4>
+          <p class="mb-3">Los beneficiarios de la Política de Gratuidad en la Matrícula podrán cambiar de IES y/o programa académico atendiendo a las disposiciones que en dicha materia contemplen las IES, sin que esto afecte la continuidad del beneficio.</p>
+          <p class="mb-3">Para que el cambio de programa o de IES se efectúe, el estudiante debe informar por escrito a ambas IES la intención de cambiar el beneficio y dejar claro en que IES quiere que se aplique el beneficio.</p>
+          <p class="mb-3">La IES a la cual cambió o desea cambiar deberá reportarlo como matriculado en el SNIES. Cada cambio que realice el estudiante acumulará los periodos ya financiados. En este sentido, a los periodos académicos a financiar, una vez el estudiante realice el cambio, se le descontará los periodos académicos ya financiados.</p>
+          <p class="mb-2">Frente al cambio de programa de pregrado en un nivel de formación diferente al financiado inicialmente, se tendrán en cuenta las siguientes situaciones:</p>
+          <ol class="space-y-2 pl-4">
+            <li><strong>1.</strong> Si el cambio se realiza a un programa con mayor número de periodos académicos, se habilitarán los periodos adicionales de acuerdo con lo establecido en el registro calificado del nuevo programa.</li>
+            <li><strong>2.</strong> Si el cambio se realiza a un programa con menor número de periodos académicos, se disminuirán los periodos aprobados inicialmente en función del registro calificado del nuevo programa.</li>
+          </ol>
+          <p class="mt-2">En cualquier caso, los cambios de IES o programas solo podrán realizarse entre IES públicas.</p>
+        </div>
+
+        <!-- Cómo acceder -->
+        <div>
+          <h4 class="font-usco-bold text-usco-vino text-lg mb-3">¿CÓMO ACCEDER AL BENEFICIO?</h4>
+          <p class="mb-2">El paso a paso es muy sencillo:</p>
+          <ul class="ml-4 space-y-2">
+            <li>• El estudiante debe dirigirse a una de las 67 Instituciones de Educación Superior públicas del país, elegir un programa académico de pregrado (técnico profesional, tecnológico o universitario), ser admitido por la institución y matricularse.</li>
+            <li>• La Institución se encargará de registrar al estudiante en el Sistema Nacional de Información de Educación Superior-SNIES.</li>
+          </ul>
+          
+          <div class="bg-red-50 border-l-4 border-red-400 p-4 mt-4">
+            <p class="font-usco-bold mb-2">Nota 3</p>
+            <p>En caso que el estudiante resulte excluido de la verificación que realiza el Ministerio de Educación por alguna de las causales y este no desembolse los pagos de la matrícula ordinaria neta, la IES realizará el cobro de este valor a los estudiantes quienes deberán asumir los valores cobrados por la IES. La Universidad Surcolombiana advierte de esta situación al momento de descargar el comprobante de pago.</p>
+          </div>
+        </div>
+
+        <!-- Más información -->
+        <div class="bg-usco-gris-pale border border-usco-gris-lighter rounded p-4">
+          <p class="font-usco-bold text-usco-vino mb-2">MÁS INFORMACIÓN EN:</p>
+          <a href="https://www.usco.edu.co/documento/486161" target="_blank" class="text-usco-vino font-usco-bold underline hover:text-usco-vino-dark">
+            https://www.usco.edu.co/documento/486161
+          </a>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="bg-usco-gris-pale px-6 py-4 flex justify-end border-t border-usco-gris-lightest flex-shrink-0">
+      <button 
+        (click)="hideGratuidadDialog()"
+        class="bg-usco-ocre hover:bg-usco-ocre-dark text-black px-4 py-2 rounded-md transition-colors duration-200 font-usco-bold btn-cerrar-animated"
       >
         Cerrar
       </button>

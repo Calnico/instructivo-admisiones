@@ -13,6 +13,7 @@ interface Step {
   requirements?: string[];
   tips?: string[];
   pdfs?: { name: string; url: string }[];
+  modalidades?: { name: string; content: string }[];
 }
 
 @Component({
@@ -34,6 +35,9 @@ export class App implements AfterViewInit {
   protected showSteps = signal<boolean>(true);
   protected visibleTerms = signal(false);
   protected closingTerms = signal(false);
+  protected visibleGratuidad = signal(false);
+  protected closingGratuidad = signal(false);
+  protected selectedModalidadIndex = signal<number>(0);
   
   private platformId = inject(PLATFORM_ID);
   private sanitizer = inject(DomSanitizer);
@@ -63,6 +67,10 @@ export class App implements AfterViewInit {
     // Crear URL segura para Angular
     this.safePdfUrl.set(this.sanitizer.bypassSecurityTrustResourceUrl(url));
   }
+
+  selectModalidad(index: number) {
+    this.selectedModalidadIndex.set(index);
+  }
   
   getGoogleViewerUrl(pdfUrl: string): string {
     if (this.isBrowser()) {
@@ -82,7 +90,7 @@ export class App implements AfterViewInit {
   protected readonly steps: Step[] = [
     {
       number: 1,
-      title: 'Oferta Académica',
+      title: '1. OFERTA ACADÉMICA - NUESTROS PROGRAMAS ACADEMICOS',
       description: 'Consulta la oferta académica por sede',
       pdfs: [
         { name: 'SEDE NEIVA', url: 'documents/OFERTA-ACADEMICA-SEDE-NEIVA.pdf' },
@@ -93,11 +101,89 @@ export class App implements AfterViewInit {
     },
     {
       number: 2,
-      title: 'Consultar costos',
-      description: 'Revisa los valores de matrícula para tu programa',
-      detailedInfo: 'Consulta en el sistema los costos de matrícula según tu programa académico, estrato socioeconómico y modalidad de estudio.',
-      requirements: ['Certificado de estrato', 'Información del programa académico'],
-      tips: ['Los costos pueden variar según el estrato', 'Consulta opciones de financiamiento disponibles']
+      title: '2. MODALIDADES DE INSCRIPCIÓN',
+      description: 'Consulta las modalidades de inscripción disponibles',
+      modalidades: [
+        {
+          name: 'Por Estricto Puntaje',
+          content: `Esta modalidad está dirigida a aspirantes que ingresan únicamente por el puntaje obtenido en las pruebas Saber 11 (ICFES).
+
+**Descripción**
+Los cupos se asignan en orden descendente según el puntaje obtenido en las pruebas Saber 11, hasta completar los cupos disponibles para cada programa académico.
+
+**Requisitos**
+• Presentar las pruebas Saber 11 con máximo 10 años de antigüedad (desde 2015)
+• Cumplir con el puntaje mínimo establecido para el programa
+• Completar el proceso de inscripción en las fechas establecidas
+• Pagar los derechos de inscripción
+
+**Documentación necesaria**
+• Fotocopia de la cédula de ciudadanía
+• Certificado y acta de grado de bachiller
+• Resultados de las pruebas Saber 11
+• Comprobante de pago de inscripción`
+        },
+        {
+          name: 'Por Regímenes Especiales',
+          content: `Modalidad para grupos poblacionales específicos que requieren atención diferencial y acciones afirmativas.
+
+**Grupos incluidos**
+• Comunidades indígenas
+• Comunidades afrocolombianas, raizales y palenqueras
+• Población víctima del conflicto armado
+• Población con discapacidad
+• Deportistas destacados a nivel nacional e internacional
+• Mejores bachilleres del departamento del Huila
+
+**Proceso de inscripción**
+El aspirante debe acreditar su pertenencia al grupo poblacional correspondiente mediante la documentación específica requerida por cada categoría.
+
+**Documentación adicional**
+• Certificación de pertenencia étnica (para comunidades indígenas y afrocolombianas)
+• Registro único de víctimas (para víctimas del conflicto)
+• Certificado de discapacidad del Ministerio de Salud
+• Certificaciones deportivas oficiales
+• Diploma de mejor bachiller departamental`
+        },
+        {
+          name: 'Por Convenio con Escuelas Normales',
+          content: `Dirigida exclusivamente a normalistas superiores graduados de instituciones que mantienen convenio vigente con la Universidad Surcolombiana.
+
+**Programas disponibles**
+Esta modalidad aplica específicamente para los programas de Licenciatura que tengan convenio establecido con Escuelas Normales Superiores.
+
+**Requisitos específicos**
+• Título de Normalista Superior debidamente registrado
+• Institución de origen con convenio vigente con la USCO
+• Cumplir con los términos específicos establecidos en el convenio
+• Presentación de documentación que acredite la graduación como normalista
+
+**Documentación requerida**
+• Diploma y acta de grado de Normalista Superior
+• Certificado de notas de la formación normalista
+• Constancia de la institución sobre el convenio vigente
+• Documentos de identidad y bachillerato`
+        },
+        {
+          name: 'Por Transferencia Académica',
+          content: `Para estudiantes que desean continuar sus estudios en la Universidad Surcolombiana provenientes de otras instituciones de educación superior.
+
+**Tipos de transferencia**
+• **Transferencia externa**: Desde otras universidades hacia la USCO
+• **Transferencia interna**: Entre programas de la misma USCO
+• **Reingreso**: Estudiantes que estuvieron matriculados anteriormente en la USCO
+
+**Requisitos generales**
+• Haber aprobado mínimo dos (2) semestres académicos
+• Certificado de calificaciones de la universidad de origen
+• Contenidos programáticos de las materias aprobadas
+• Estar a paz y salvo con la institución de origen
+• No estar sancionado académica o disciplinariamente
+
+**Proceso de homologación**
+Las materias aprobadas en la institución de origen serán evaluadas por el comité de programa correspondiente para determinar las equivalencias y homologaciones respectivas.`
+        }
+      ]
     },
     {
       number: 3,
@@ -122,38 +208,6 @@ export class App implements AfterViewInit {
       detailedInfo: 'Consulta el plan de estudios y selecciona las materias correspondientes a tu semestre. Verifica prerrequisitos y cupos disponibles.',
       requirements: ['PIN de matrícula', 'Plan de estudios del programa'],
       tips: ['Revisa los prerrequisitos de cada materia', 'Ten alternativas por si no hay cupos']
-    },
-    {
-      number: 6,
-      title: 'Elegir horarios',
-      description: 'Selecciona los horarios que mejor se ajusten',
-      detailedInfo: 'Para cada materia seleccionada, escoge el grupo y horario disponible. Verifica que no haya cruces de horarios entre materias.',
-      requirements: ['Materias seleccionadas', 'Disponibilidad de horarios'],
-      tips: ['Evita cruces de horarios', 'Considera tiempos de desplazamiento entre clases']
-    },
-    {
-      number: 7,
-      title: 'Confirmar inscripción',
-      description: 'Finaliza tu inscripción de materias',
-      detailedInfo: 'Revisa cuidadosamente todas las materias y horarios seleccionados, luego confirma tu inscripción. Una vez confirmada, los cambios son limitados.',
-      requirements: ['Materias y horarios seleccionados'],
-      tips: ['Revisa todo antes de confirmar', 'Los cambios posteriores tienen restricciones']
-    },
-    {
-      number: 8,
-      title: 'Generar comprobante',
-      description: 'Descarga tu certificado de matrícula',
-      detailedInfo: 'Una vez completado el proceso, genera y descarga tu comprobante de matrícula. Este documento certifica tu inscripción oficial.',
-      requirements: ['Proceso de matrícula completado'],
-      tips: ['Descarga el PDF del comprobante', 'Imprime una copia para tus archivos']
-    },
-    {
-      number: 9,
-      title: 'Verificar matrícula',
-      description: 'Confirma que tu matrícula esté activa',
-      detailedInfo: 'Verifica en el sistema que tu estado sea "MATRICULADO" y que todas las materias aparezcan correctamente registradas.',
-      requirements: ['Comprobante de matrícula'],
-      tips: ['Guarda tu comprobante', 'Contacta soporte si hay inconsistencias']
     }
   ];
 
@@ -162,6 +216,7 @@ export class App implements AfterViewInit {
     this.closing.set(false);
     this.visible.set(true);
     this.selectedPdfIndex.set(0);
+    this.selectedModalidadIndex.set(0);
     
     // Prevenir scroll en el fondo
     if (this.isBrowser()) {
@@ -215,5 +270,43 @@ export class App implements AfterViewInit {
         document.body.style.overflow = 'auto';
       }
     }, 300);
+  }
+
+  showGratuidadDialog() {
+    this.closingGratuidad.set(false);
+    this.visibleGratuidad.set(true);
+    
+    // Prevenir scroll en el fondo
+    if (this.isBrowser()) {
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  hideGratuidadDialog() {
+    this.closingGratuidad.set(true);
+    setTimeout(() => {
+      this.visibleGratuidad.set(false);
+      this.closingGratuidad.set(false);
+      
+      // Restaurar scroll en el fondo
+      if (this.isBrowser()) {
+        document.body.style.overflow = 'auto';
+      }
+    }, 300);
+  }
+
+  protected formatText(text: string | undefined): string {
+    if (!text) return '';
+    
+    return text
+      .replace(/\*\*(.*?)\*\*/g, '<h5 class="font-usco-bold text-usco-vino text-lg mb-2 mt-4">$1</h5>')
+      .replace(/•\s(.*?)(?=\n|$)/g, '<li class="ml-4">• $1</li>')
+      .replace(/\n\n/g, '</p><p class="mb-3">')
+      .replace(/\n/g, '<br>')
+      .replace(/^/, '<p class="mb-3">')
+      .replace(/$/, '</p>')
+      .replace(/<\/p><p class="mb-3"><li/g, '</p><ul class="space-y-1 mb-3"><li')
+      .replace(/<\/li><\/p>/g, '</li></ul>')
+      .replace(/<\/li><p class="mb-3"><li/g, '</li><li');
   }
 }

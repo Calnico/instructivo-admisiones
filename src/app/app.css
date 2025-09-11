@@ -32,3 +32,17 @@
 .animate-slideOutUp {
   animation: slideOutUp 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+
+/* Animación para el botón cerrar con efecto zoom */
+@keyframes zoomPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.btn-cerrar-animated {
+  animation: zoomPulse 2s ease-in-out infinite;
+}
