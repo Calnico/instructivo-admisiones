@@ -1,4 +1,4 @@
-/* Animaciones para el despliegue de pasos */
+/* Animaciones para el despliegue de pasos y acordeones */
 @keyframes slideInDown {
   from {
     opacity: 0;
@@ -45,4 +45,63 @@
 
 .btn-cerrar-animated {
   animation: zoomPulse 2s ease-in-out infinite;
+}
+
+/* Animaciones para acordeones */
+@keyframes slideDown {
+  from {
+    max-height: 0;
+    opacity: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  to {
+    max-height: 1000px;
+    opacity: 1;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    max-height: 1000px;
+    opacity: 1;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  to {
+    max-height: 0;
+    opacity: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.3s ease-in-out forwards;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.3s ease-in-out forwards;
+}
+
+/* Estilos para acordeones */
+.acordeon-button {
+  transition: all 0.2s ease-in-out;
+}
+
+.acordeon-button.closed {
+  background-color: var(--usco-ocre) !important;
+  color: black !important;
+}
+
+.acordeon-button.closed:hover {
+  background-color: var(--usco-vino) !important;
+  color: white !important;
+}
+
+.acordeon-button.open {
+  background-color: var(--usco-vino) !important;
+  color: white !important;
 }

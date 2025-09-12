@@ -27,13 +27,18 @@
     
     <!-- Botón de Política de Gratuidad -->
     <div class="max-w-6xl mx-auto mt-8">
-      <button (click)="showGratuidadDialog()" class="w-full bg-usco-gris-pale border border-usco-gris-lighter rounded-lg p-6 cursor-pointer hover:shadow-md transition-shadow duration-200 text-left">
-        <h3 class="text-lg font-usco-condensed-bold text-usco-vino mb-3">
-          POLÍTICA DE GRATUIDAD EN LA MATRÍCULA
-        </h3>
-        <p class="text-usco-gris-dark font-usco">
-          La Política de Gratuidad se aplica conforme el Reglamento Operativo comunicado por el Ministerio de Educación Nacional
-        </p>
+      <button (click)="showGratuidadDialog()" class="w-full bg-usco-gris-pale border border-usco-gris-lighter rounded-lg p-6 cursor-pointer hover:shadow-md transition-shadow duration-200 text-left flex items-center">
+        <div class="flex-1">
+          <h3 class="text-lg font-usco-condensed-bold text-usco-vino mb-3">
+            POLÍTICA DE GRATUIDAD EN LA MATRÍCULA
+          </h3>
+          <p class="text-usco-gris-dark font-usco">
+            La Política de Gratuidad se aplica conforme el Reglamento Operativo comunicado por el Ministerio de Educación Nacional
+          </p>
+        </div>
+        <div class="ml-4 flex-shrink-0">
+          <img src="images/hacer-clic.png" alt="Hacer clic" class="w-8 h-8 object-contain" style="filter: brightness(0) saturate(100%);">
+        </div>
       </button>
     </div>
   </div>
@@ -112,8 +117,8 @@
     
     <!-- Contenido -->
     <div class="overflow-y-auto flex-1" *ngIf="selectedStep()">
-      <!-- Solo mostrar PDFs para el paso 1 -->
-      <div *ngIf="selectedStep()!.number === 1 && selectedStep()!.pdfs && selectedStep()!.pdfs!.length > 0" class="p-4">
+      <!-- Solo mostrar PDFs para el paso 1 y paso 3 -->
+      <div *ngIf="(selectedStep()!.number === 1 || selectedStep()!.number === 3) && selectedStep()!.pdfs && selectedStep()!.pdfs!.length > 0" class="p-4">
         <!-- Listado horizontal de sedes -->
         <div class="mb-6">
           <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -152,8 +157,27 @@
         </div>
       </div>
 
-      <!-- Mostrar modalidades para el paso 2 -->
-      <div *ngIf="selectedStep()!.number === 2 && selectedStep()!.modalidades && selectedStep()!.modalidades!.length > 0" class="p-4">
+      <!-- Mostrar modalidades para el paso 2, 3 y paso 4 -->
+      <div *ngIf="(selectedStep()!.number === 2 || selectedStep()!.number === 3 || selectedStep()!.number === 4) && selectedStep()!.modalidades && selectedStep()!.modalidades!.length > 0" class="p-4">
+        <!-- Texto informativo antes de las modalidades (solo para paso 2) -->
+        <div *ngIf="selectedStep()!.number === 2" class="bg-yellow-50 border-l-4 border-yellow-400 p-6 mb-6">
+          <h4 class="font-usco-bold text-usco-vino text-lg mb-3">
+            <a href="https://www.usco.edu.co/archivosUsuarios/16/publicacion/consejo_academico/acuerdo/acuerdo_003_de_2016.pdf" target="_blank" class="underline">
+              Ver Reglamento. Lectura obligatoria.
+            </a>
+          </h4>
+          
+          <div class="space-y-4 text-usco-gris-dark font-usco">
+            <p class="font-usco-bold">
+              IMPORTANTE: De conformidad con lo establecido en el Acuerdo Número 003 del 12 de abril de 2016 expedido por el Consejo Académico, el estudiante que haya estado matriculado en la Universidad Surcolombiana y por alguna causal perdió el cupo en un Programa Académico de Pregrado, NO podrá inscribirse al mismo Programa, ya sea en otra jornada, en otra Sede o al mismo Programa, así haya cambiado de denominación.
+            </p>
+            
+            <p>
+              Con fundamento en el Decreto número 860 del 23 de abril de 2003 expedido por el Ministerio de Educación Nacional, la Prueba de Estado (ICFES o Saber 11) será el único documento válido para inscribirse. Recuerde que sólo se aceptan las pruebas de Estado (ICFES o Saber 11) con 10 años de vigencia, es decir, a partir del año 2015.
+            </p>
+          </div>
+        </div>
+        
         <!-- Listado horizontal de modalidades -->
         <div class="mb-6">
           <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -173,14 +197,158 @@
         
         <!-- Contenido de la modalidad -->
         <div *ngIf="selectedStep()!.modalidades && selectedStep()!.modalidades![selectedModalidadIndex()]" class="bg-white">
-          <div class="border rounded bg-white p-6">
+          <!-- Si la modalidad tiene PDF, mostrarlo -->
+          <div *ngIf="selectedStep()!.modalidades![selectedModalidadIndex()].pdf && !isBrowser()" class="flex items-center justify-center h-[400px] bg-gray-100 rounded">
+            <p class="text-usco-gris">Cargando visor PDF...</p>
+          </div>
+          
+          <div *ngIf="selectedStep()!.modalidades![selectedModalidadIndex()].pdf && isBrowser()">
+            <div class="border rounded bg-white p-4">
+              <embed 
+                [src]="sanitizeModalidadPdfUrl(selectedStep()!.modalidades![selectedModalidadIndex()].pdf!)" 
+                width="98%" 
+                height="630" 
+                type="application/pdf"
+                class="rounded border" />
+            </div>
+          </div>
+          
+          <!-- Si la modalidad tiene contenido de texto, mostrarlo -->
+          <div *ngIf="!selectedStep()!.modalidades![selectedModalidadIndex()].pdf && selectedStep()!.modalidades![selectedModalidadIndex()].content" class="border rounded bg-white p-4">
             <div class="text-usco-gris-dark leading-relaxed font-usco space-y-4" [innerHTML]="formatText(selectedStep()!.modalidades![selectedModalidadIndex()].content)"></div>
+            
+            <!-- Acordeones si existen -->
+            <div *ngIf="selectedStep()!.modalidades![selectedModalidadIndex()].acordeones" class="mt-4 space-y-2">
+              <div *ngFor="let acordeon of selectedStep()!.modalidades![selectedModalidadIndex()].acordeones!; let i = index" class="border border-usco-gris-lighter rounded-lg">
+                <button 
+                  (click)="toggleAcordeon(i)"
+                  class="w-full px-4 py-3 text-left transition-colors duration-200 rounded-t-lg flex items-center justify-between"
+                  [ngClass]="{
+                    'bg-usco-ocre text-gray-600 rounded-lg': selectedAcordeonIndex() !== i,
+                    'bg-usco-vino text-white rounded-b-none': selectedAcordeonIndex() === i
+                  }"
+                  style="transition: all 0.2s;"
+                  (mouseenter)="onAcordeonMouseEnter($event)"
+                  (mouseleave)="onAcordeonMouseLeave($event, i)">
+                  <span class="font-usco-bold">{{ acordeon.titulo }}</span>
+                  <span class="text-xl" [ngClass]="selectedAcordeonIndex() === i ? 'rotate-180' : 'rotate-0'" style="transition: transform 0.2s;">▼</span>
+                </button>
+                <div 
+                  *ngIf="selectedAcordeonIndex() === i || acordeonClosing() === i" 
+                  class="px-4 py-3 bg-white border-t border-usco-gris-lighter overflow-hidden"
+                  [ngClass]="{
+                    'animate-slideDown': selectedAcordeonIndex() === i && acordeonClosing() !== i,
+                    'animate-slideUp': acordeonClosing() === i
+                  }">
+                  <div class="text-usco-gris-dark font-usco" [innerHTML]="formatText(acordeon.contenido)"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       
-      <!-- Para otros pasos, mostrar contenido normal -->
-      <div *ngIf="selectedStep()!.number !== 1 && selectedStep()!.number !== 2" class="p-6">
+      <!-- Para el paso 5, mostrar iconos interactivos -->
+      <div *ngIf="selectedStep()!.number === 5" class="p-6">
+        <div class="text-center mb-8">
+          <h2 class="text-2xl font-usco-condensed-bold text-usco-vino bg-usco-ocre-pale px-6 py-4 rounded-lg border-l-4 border-usco-vino shadow-md">
+            RECUERDE QUE PARA REALIZAR LA INSCRIPCIÓN Y MATRÍCULA DEBE SEGUIR OBLIGATORIAMENTE CADA PASO
+          </h2>
+        </div>
+        <div class="flex items-center justify-center space-x-6">
+          <!-- PIN -->
+          <div class="cursor-pointer group relative" (click)="showIconInfo('pin')">
+            <img src="images/pin.png" alt="PIN" class="w-48 h-48 object-contain object-center transition-opacity duration-300" 
+                 [class.opacity-0]="activeIcon() === 'pin' || null" 
+                 [class.group-hover:opacity-0]="activeIcon() !== 'pin'" />
+            <img src="images/pin-hover.png" alt="PIN Hover" class="w-48 h-48 object-contain object-center absolute top-0 left-0 transition-opacity duration-300" 
+                 [class.opacity-100]="activeIcon() === 'pin'" 
+                 [class.opacity-0]="activeIcon() !== 'pin'" 
+                 [class.group-hover:opacity-100]="activeIcon() !== 'pin'" />
+          </div>
+          
+          <!-- Flecha -->
+          <div class="text-usco-vino text-4xl flex items-center">→</div>
+          
+          <!-- Formulario Inscripción -->
+          <div class="cursor-pointer group relative" (click)="showIconInfo('formulario')">
+            <img src="images/formulario-inscripcion.png" alt="Formulario Inscripción" class="w-48 h-48 object-contain object-center transition-opacity duration-300" 
+                 [class.opacity-0]="activeIcon() === 'formulario' || null" 
+                 [class.group-hover:opacity-0]="activeIcon() !== 'formulario'" />
+            <img src="images/formulario-inscripcion-hover.png" alt="Formulario Inscripción Hover" class="w-48 h-48 object-contain object-center absolute top-0 left-0 transition-opacity duration-300" 
+                 [class.opacity-100]="activeIcon() === 'formulario'" 
+                 [class.opacity-0]="activeIcon() !== 'formulario'" 
+                 [class.group-hover:opacity-100]="activeIcon() !== 'formulario'" />
+          </div>
+          
+          <!-- Flecha -->
+          <div class="text-usco-vino text-4xl flex items-center">→</div>
+          
+          <!-- Estado Inscripción -->
+          <div class="cursor-pointer group relative" (click)="showIconInfo('estado')">
+            <img src="images/estado-inscripcion.png" alt="Estado Inscripción" class="w-48 h-48 object-contain object-center transition-opacity duration-300" 
+                 [class.opacity-0]="activeIcon() === 'estado' || null" 
+                 [class.group-hover:opacity-0]="activeIcon() !== 'estado'" />
+            <img src="images/estado-inscripcion-hover.png" alt="Estado Inscripción Hover" class="w-48 h-48 object-contain object-center absolute top-0 left-0 transition-opacity duration-300" 
+                 [class.opacity-100]="activeIcon() === 'estado'" 
+                 [class.opacity-0]="activeIcon() !== 'estado'" 
+                 [class.group-hover:opacity-100]="activeIcon() !== 'estado'" />
+          </div>
+          
+          <!-- Flecha -->
+          <div class="text-usco-vino text-4xl flex items-center">→</div>
+          
+          <!-- Admitidos -->
+          <div class="cursor-pointer group relative" (click)="showIconInfo('admitidos')">
+            <img src="images/admitidos.png" alt="Admitidos" class="w-48 h-48 object-contain object-center transition-opacity duration-300" 
+                 [class.opacity-0]="activeIcon() === 'admitidos' || null" 
+                 [class.group-hover:opacity-0]="activeIcon() !== 'admitidos'" />
+            <img src="images/admitidos-hover.png" alt="Admitidos Hover" class="w-48 h-48 object-contain object-center absolute top-0 left-0 transition-opacity duration-300" 
+                 [class.opacity-100]="activeIcon() === 'admitidos'" 
+                 [class.opacity-0]="activeIcon() !== 'admitidos'" 
+                 [class.group-hover:opacity-100]="activeIcon() !== 'admitidos'" />
+          </div>
+          
+          <!-- Flecha -->
+          <div class="text-usco-vino text-4xl flex items-center">→</div>
+          
+          <!-- Matrícula Financiera -->
+          <div class="cursor-pointer group relative" (click)="showIconInfo('financiera')">
+            <img src="images/financiera.png" alt="Matrícula Financiera" class="w-48 h-48 object-contain object-center transition-opacity duration-300" 
+                 [class.opacity-0]="activeIcon() === 'financiera' || null" 
+                 [class.group-hover:opacity-0]="activeIcon() !== 'financiera'" />
+            <img src="images/financiera-hover.png" alt="Matrícula Financiera Hover" class="w-48 h-48 object-contain object-center absolute top-0 left-0 transition-opacity duration-300" 
+                 [class.opacity-100]="activeIcon() === 'financiera'" 
+                 [class.opacity-0]="activeIcon() !== 'financiera'" 
+                 [class.group-hover:opacity-100]="activeIcon() !== 'financiera'" />
+          </div>
+          
+          <!-- Flecha -->
+          <div class="text-usco-vino text-4xl flex items-center">→</div>
+          
+          <!-- Matrícula Académica -->
+          <div class="cursor-pointer group relative" (click)="showIconInfo('academica')">
+            <img src="images/academica.png" alt="Matrícula Académica" class="w-48 h-48 object-contain object-center transition-opacity duration-300" 
+                 [class.opacity-0]="activeIcon() === 'academica' || null" 
+                 [class.group-hover:opacity-0]="activeIcon() !== 'academica'" />
+            <img src="images/academica-hover.png" alt="Matrícula Académica Hover" class="w-48 h-48 object-contain object-center absolute top-0 left-0 transition-opacity duration-300" 
+                 [class.opacity-100]="activeIcon() === 'academica'" 
+                 [class.opacity-0]="activeIcon() !== 'academica'" 
+                 [class.group-hover:opacity-100]="activeIcon() !== 'academica'" />
+          </div>
+        </div>
+        
+        <!-- Panel de información del icono seleccionado -->
+        <div *ngIf="selectedIconInfo()" class="mt-6 bg-white border border-usco-gris-lighter rounded-lg shadow-lg"
+             [class.animate-slideInDown]="!closingIconPanel() && !openingIconPanel()"
+             [class.animate-slideOutUp]="closingIconPanel()"
+             [class.animate-scaleIn]="openingIconPanel()">
+          <div class="p-6" [innerHTML]="selectedIconInfo()"></div>
+        </div>
+      </div>
+      
+      <!-- Para otros pasos (excepto 1, 2, 3, 4, 5), mostrar contenido normal -->
+      <div *ngIf="selectedStep()!.number !== 1 && selectedStep()!.number !== 2 && selectedStep()!.number !== 3 && selectedStep()!.number !== 4 && selectedStep()!.number !== 5" class="p-6">
         <!-- Descripción detallada -->
         <div *ngIf="selectedStep()!.detailedInfo" class="mb-6">
           <h4 class="text-lg font-usco-condensed-bold mb-3 text-usco-vino">Información detallada</h4>
@@ -213,13 +381,25 @@
     
     <!-- Footer -->
     <div class="bg-usco-gris-pale px-6 py-4 flex justify-between items-center border-t border-usco-gris-lightest flex-shrink-0">
+      <!-- Enlace para PDFs del paso 1 -->
       <a *ngIf="selectedStep()?.number === 1 && selectedStep()?.pdfs && selectedStep()?.pdfs![selectedPdfIndex()]" 
          [href]="selectedStep()!.pdfs![selectedPdfIndex()].url" 
          target="_blank" 
          class="bg-usco-vino hover:bg-usco-vino-dark text-white px-4 py-2 rounded-md transition-colors duration-200 font-usco-bold">
         Ver PDF de {{ selectedStep()!.pdfs![selectedPdfIndex()].name }}
       </a>
-      <div *ngIf="selectedStep()?.number !== 1"></div>
+      
+      <!-- Enlace para modalidades del paso 3 que tengan PDF -->
+      <a *ngIf="selectedStep()?.number === 3 && selectedStep()?.modalidades && selectedStep()?.modalidades![selectedModalidadIndex()].pdf" 
+         [href]="selectedStep()!.modalidades![selectedModalidadIndex()].pdf" 
+         target="_blank" 
+         class="bg-usco-vino hover:bg-usco-vino-dark text-white px-4 py-2 rounded-md transition-colors duration-200 font-usco-bold">
+        <span *ngIf="selectedStep()!.modalidades![selectedModalidadIndex()].name === '3.1 Puntajes de Cierre Programas de Pregrado'">Ver PDF de Puntajes de cierre</span>
+        <span *ngIf="selectedStep()!.modalidades![selectedModalidadIndex()].name === 'Ponderaciones por Programa Académico'">Ver PDF de Ponderaciones</span>
+        <span *ngIf="selectedStep()!.modalidades![selectedModalidadIndex()].name !== '3.1 Puntajes de Cierre Programas de Pregrado' && selectedStep()!.modalidades![selectedModalidadIndex()].name !== 'Ponderaciones por Programa Académico'">Ver PDF de {{ selectedStep()!.modalidades![selectedModalidadIndex()].name }}</span>
+      </a>
+      <!-- Espacio vacío para alinear el botón cerrar a la derecha cuando no hay PDF -->
+      <div *ngIf="selectedStep()?.number !== 1 && (selectedStep()?.number !== 3 || (selectedStep()?.number === 3 && selectedStep()?.modalidades && !selectedStep()?.modalidades![selectedModalidadIndex()].pdf))"></div>
       <button 
         (click)="hideDialog()"
         class="bg-usco-ocre hover:bg-usco-ocre-dark text-black px-4 py-2 rounded-md transition-colors duration-200 font-usco-bold btn-cerrar-animated"

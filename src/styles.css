@@ -132,6 +132,19 @@ body {
     font-weight: 700;
   }
   
+  /* Posicionamiento para iconos hover */
+  .hover-offset-1 {
+    top: -0.25rem !important;
+  }
+  
+  .hover-offset-2 {
+    top: -0.5rem !important;
+  }
+  
+  .hover-offset-3 {
+    top: -0.75rem !important;
+  }
+  
   /* Animaciones del modal */
   .animate-fadeIn {
     animation: fadeIn 0.3s ease-out forwards;
