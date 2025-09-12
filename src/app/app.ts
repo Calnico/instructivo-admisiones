@@ -321,7 +321,7 @@ f). Tener aprobadas todas las asignaturas hasta el semestre cursado.
       modalidades: [
         {
           name: '4.1 Examen médico y prueba de aptitud física',
-          content: `**4.1 Examen médico y prueba de aptitud física para los Aspirantes inscritos al Programa de Licenciatura en Educación Física, Recreación y Deportes**<table class="w-full border-collapse border border-usco-gris-lighter mt-4">
+          content: `**4.1 Examen médico y prueba de aptitud física para los Aspirantes inscritos al Programa de Licenciatura en Educación Física, Recreación y Deportes**<table class="min-w-full border-collapse border border-usco-gris-lighter mt-4" style="min-width: 800px;"
   <thead>
     <tr class="bg-usco-gris-pale">
       <th class="border border-usco-gris-lighter p-3 text-left font-usco-bold text-usco-vino">TIPO DE PRUEBA</th>
@@ -391,7 +391,7 @@ f). Tener aprobadas todas las asignaturas hasta el semestre cursado.
 
 Los aspirantes de las COMUNIDADES INDÍGENAS que se inscriban bajo esta modalidad y cuya inscripción sea válida, deberán presentar la prueba oral sobre el manejo del idioma indígena propio y/o prueba sobre realidad y cultura Indígena.
 
-<table class="w-full border-collapse border border-usco-gris-lighter mt-4 mb-4">
+<table class="min-w-full border-collapse border border-usco-gris-lighter mt-4 mb-4" style="min-width: 800px;"
   <thead>
     <tr class="bg-usco-gris-pale">
       <th class="border border-usco-gris-lighter p-3 text-left font-usco-bold text-usco-vino">FECHA</th>
@@ -417,7 +417,7 @@ Ver numeral 2. MODALIDADES DE INSCRIPCIÓN, Regimen Especial: Comunidades Indíg
 
 Los aspirantes al Programa de Licenciatura en Educación Artística deberán presentar una prueba de aptitud específica para demostrar sus habilidades y competencias artísticas.
 
-<table class="w-full border-collapse border border-usco-gris-lighter mt-4 mb-4">
+<table class="min-w-full border-collapse border border-usco-gris-lighter mt-4 mb-4" style="min-width: 800px;"
   <thead>
     <tr class="bg-usco-gris-pale">
       <th class="border border-usco-gris-lighter p-3 text-left font-usco-bold text-usco-vino">FECHA</th>

@@ -203,3 +203,22 @@ body {
     transform: scale(0.9) translateY(-10px);
   }
 }
+
+/* Mobile table improvements */
+@media (max-width: 768px) {
+  .overflow-x-auto table {
+    font-size: 0.875rem;
+  }
+  
+  .overflow-x-auto th,
+  .overflow-x-auto td {
+    padding: 0.5rem !important;
+    min-width: 120px;
+  }
+  
+  .overflow-x-auto th {
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+  
+}

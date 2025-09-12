@@ -64,19 +64,14 @@
   <div class="max-w-6xl mx-auto">
     <div class="relative">
       <div *ngFor="let step of steps; let isLast = last; let isFirst = first" class="relative">
-        <!-- Línea vertical conectora para cada paso (excepto el último) -->
-        <div *ngIf="!isLast" class="absolute left-6 w-0.5 bg-usco-ocre-dark" 
-             [ngClass]="{'hidden md:block': true}"
+        <!-- Línea vertical conectora para cada paso (excepto el último) - solo desktop -->
+        <div *ngIf="!isLast" class="absolute left-6 w-0.5 bg-usco-ocre-dark hidden md:block" 
              [ngStyle]="isFirst ? {top: '62px', height: 'calc(100% + 18px)'} : {top: '48px', height: 'calc(100% + 48px)'}">
-        </div>
-        <!-- Línea para móvil -->
-        <div *ngIf="!isLast" class="absolute left-6 w-0.5 bg-usco-ocre-dark block md:hidden" 
-             [ngStyle]="isFirst ? {top: '48px', height: 'calc(100% + 32px)'} : {top: '48px', height: 'calc(100% + 32px)'}">
         </div>
         <!-- Estructura uniforme para todos los pasos -->
         <div class="flex items-center mb-8">
           <!-- Número fuera del banner -->
-          <div class="w-12 h-12 text-white rounded-full flex items-center justify-center font-bold text-lg mr-8 md:mr-12 flex-shrink-0 relative z-10 bg-usco-vino">
+          <div class="w-8 h-8 md:w-12 md:h-12 text-white rounded-full flex items-center justify-center font-bold text-sm md:text-lg mr-4 md:mr-12 flex-shrink-0 relative z-10 bg-usco-vino">
             {{ step.number }}
           </div>
           
@@ -215,7 +210,7 @@
           
           <!-- Si la modalidad tiene contenido de texto, mostrarlo -->
           <div *ngIf="!selectedStep()!.modalidades![selectedModalidadIndex()].pdf && selectedStep()!.modalidades![selectedModalidadIndex()].content" class="border rounded bg-white p-4">
-            <div class="text-usco-gris-dark leading-relaxed font-usco space-y-4" [innerHTML]="formatText(selectedStep()!.modalidades![selectedModalidadIndex()].content)"></div>
+            <div class="text-usco-gris-dark leading-relaxed font-usco space-y-4 overflow-x-auto" [innerHTML]="formatText(selectedStep()!.modalidades![selectedModalidadIndex()].content)"></div>
             
             <!-- Acordeones si existen -->
             <div *ngIf="selectedStep()!.modalidades![selectedModalidadIndex()].acordeones" class="mt-4 space-y-2">
@@ -255,7 +250,8 @@
             RECUERDE QUE PARA REALIZAR LA INSCRIPCIÓN Y MATRÍCULA DEBE SEGUIR OBLIGATORIAMENTE CADA PASO
           </h2>
         </div>
-        <div class="flex items-center justify-center space-x-6">
+        <!-- Desktop view with icons and arrows -->
+        <div class="hidden md:flex items-center justify-center space-x-6">
           <!-- PIN -->
           <div class="cursor-pointer group relative" (click)="showIconInfo('pin')">
             <img src="images/pin.png" alt="PIN" class="w-48 h-48 object-contain object-center transition-opacity duration-300" 
@@ -336,6 +332,63 @@
                  [class.opacity-0]="activeIcon() !== 'academica'" 
                  [class.group-hover:opacity-100]="activeIcon() !== 'academica'" />
           </div>
+        </div>
+        
+        <!-- Mobile view with large buttons -->
+        <div class="md:hidden grid grid-cols-1 gap-4 max-w-md mx-auto">
+          <!-- PIN Button -->
+          <button (click)="showIconInfo('pin')" class="w-full p-4 rounded-lg border-2 transition-all duration-200 text-left"
+                  [ngClass]="activeIcon() === 'pin' ? 
+                    'bg-usco-vino text-white border-usco-vino shadow-lg' : 
+                    'bg-white text-usco-gris border-usco-gris-lighter hover:bg-usco-ocre hover:text-black hover:border-usco-ocre'">
+            <div class="font-usco-bold text-lg">1. PIN</div>
+            <div class="text-sm mt-1 opacity-75">Generar PIN de inscripción</div>
+          </button>
+          
+          <!-- Formulario Button -->
+          <button (click)="showIconInfo('formulario')" class="w-full p-4 rounded-lg border-2 transition-all duration-200 text-left"
+                  [ngClass]="activeIcon() === 'formulario' ? 
+                    'bg-usco-vino text-white border-usco-vino shadow-lg' : 
+                    'bg-white text-usco-gris border-usco-gris-lighter hover:bg-usco-ocre hover:text-black hover:border-usco-ocre'">
+            <div class="font-usco-bold text-lg">2. Formulario de Inscripción</div>
+            <div class="text-sm mt-1 opacity-75">Completar formulario online</div>
+          </button>
+          
+          <!-- Estado Button -->
+          <button (click)="showIconInfo('estado')" class="w-full p-4 rounded-lg border-2 transition-all duration-200 text-left"
+                  [ngClass]="activeIcon() === 'estado' ? 
+                    'bg-usco-vino text-white border-usco-vino shadow-lg' : 
+                    'bg-white text-usco-gris border-usco-gris-lighter hover:bg-usco-ocre hover:text-black hover:border-usco-ocre'">
+            <div class="font-usco-bold text-lg">3. Estado de Inscripción</div>
+            <div class="text-sm mt-1 opacity-75">Consultar estado y resultados</div>
+          </button>
+          
+          <!-- Admitidos Button -->
+          <button (click)="showIconInfo('admitidos')" class="w-full p-4 rounded-lg border-2 transition-all duration-200 text-left"
+                  [ngClass]="activeIcon() === 'admitidos' ? 
+                    'bg-usco-vino text-white border-usco-vino shadow-lg' : 
+                    'bg-white text-usco-gris border-usco-gris-lighter hover:bg-usco-ocre hover:text-black hover:border-usco-ocre'">
+            <div class="font-usco-bold text-lg">4. Lista de Admitidos</div>
+            <div class="text-sm mt-1 opacity-75">Verificar admisión</div>
+          </button>
+          
+          <!-- Matrícula Financiera Button -->
+          <button (click)="showIconInfo('financiera')" class="w-full p-4 rounded-lg border-2 transition-all duration-200 text-left"
+                  [ngClass]="activeIcon() === 'financiera' ? 
+                    'bg-usco-vino text-white border-usco-vino shadow-lg' : 
+                    'bg-white text-usco-gris border-usco-gris-lighter hover:bg-usco-ocre hover:text-black hover:border-usco-ocre'">
+            <div class="font-usco-bold text-lg">5. Matrícula Financiera</div>
+            <div class="text-sm mt-1 opacity-75">Realizar pago de matrícula</div>
+          </button>
+          
+          <!-- Matrícula Académica Button -->
+          <button (click)="showIconInfo('academica')" class="w-full p-4 rounded-lg border-2 transition-all duration-200 text-left"
+                  [ngClass]="activeIcon() === 'academica' ? 
+                    'bg-usco-vino text-white border-usco-vino shadow-lg' : 
+                    'bg-white text-usco-gris border-usco-gris-lighter hover:bg-usco-ocre hover:text-black hover:border-usco-ocre'">
+            <div class="font-usco-bold text-lg">6. Matrícula Académica</div>
+            <div class="text-sm mt-1 opacity-75">Completar proceso académico</div>
+          </button>
         </div>
         
         <!-- Panel de información del icono seleccionado -->
