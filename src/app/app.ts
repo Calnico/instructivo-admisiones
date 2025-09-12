@@ -167,7 +167,7 @@ La Universidad otorgará un (1) cupo especial en cada uno de los Programas de Pr
               titulo: '1. Comunidades Negras, Afrocolombianas, Raizales y Palanqueras',
               contenido: `**ENTREGA DE DOCUMENTOS:** El aspirante que pertenezca y se inscriba por este régimen especial, deberá entregar el documento oficial expedido por el Ministerio del Interior que acredite la condición, el cual debe tener una vigencia de expedición no mayor de tres (3) meses a la fecha de presentación en la Universidad. Adicionalmente, deberá adjuntar el respectivo certificado de inscripción. Estos deben entregarse en la oficina de Registro y Control Académico de la sede central de la Universidad Surcolombiana o a través del correo: <a href="mailto:registro@usco.edu.co" class="underline text-usco-vino font-bold">registro@usco.edu.co</a>
 
-**FECHAS ENTREGA DE DOCUMENTOS:** DEL 1 DE ABRIL AL 12 DE JUNIO DE 2025 hasta las 6:00 p.m.
+**FECHAS ENTREGA DE DOCUMENTOS:** <span class="text-blue-900 font-bold">DEL 15 DE SEPTIEMBRE AL 28 DE OCTUBRE DE 2025 A LAS 6:00 P.M.</span>
 
 **A TENER EN CUENTA:** El aspirante deberá entregar la documentación completa y en los términos que aquí se detallan. Si el aspirante no presenta la documentación completa en las fechas establecidas para ello, no será tenido en cuenta dentro del proceso de selección y admisión. La Universidad no se hace responsable por los documentos que no se reciban completos y en los plazos establecidos.`
             },
@@ -175,7 +175,7 @@ La Universidad otorgará un (1) cupo especial en cada uno de los Programas de Pr
               titulo: '2. Desplazados por la Violencia',
               contenido: `**ENTREGA DE DOCUMENTOS:** El aspirante que pertenezca y se inscriba por este régimen especial, deberá entregar el documento oficial expedido por la Unidad para la Atención y Reparación Integral a las Víctimas de la Presidencia de la República que acredite la condición, el cual debe tener una vigencia de expedición no mayor de tres (3) meses a la fecha de presentación en la Universidad. Adicionalmente, deberá adjuntar el respectivo certificado de inscripción. Estos deben entregarse en la oficina de Registro y Control Académico de la sede central de la Universidad Surcolombiana o a través del correo: <a href="mailto:registro@usco.edu.co" class="underline text-usco-vino font-bold">registro@usco.edu.co</a>
 
-**FECHAS ENTREGA DE DOCUMENTOS:** 1 DE ABRIL AL 12 DE JUNIO DE 2025 hasta las 6:00 p.m.
+**FECHAS ENTREGA DE DOCUMENTOS:** <span class="text-blue-900 font-bold">DEL 15 DE SEPTIEMBRE AL 28 DE OCTUBRE DE 2025 A LAS 6:00 P.M.</span>
 
 **A TENER EN CUENTA:** El aspirante deberá entregar la documentación completa y en los términos que aquí se detallan. Si el aspirante no presenta la documentación completa en las fechas establecidas para ello, no será tenido en cuenta dentro del proceso de selección y admisión. La Universidad no se hace responsable por los documentos que no se reciban completos y en los plazos establecidos.`
             },
@@ -185,7 +185,7 @@ La Universidad otorgará un (1) cupo especial en cada uno de los Programas de Pr
 
 **ENTREGA DE DOCUMENTOS:** El aspirante que pertenezca y se inscriba por este régimen especial, deberá entregar la certificación expedida por la Agencia para la Reincorporación y la Normalización - ARN, con el fin de acreditar su condición. El documento debe tener una vigencia de expedición no mayor a tres (3) meses a la fecha de presentación en la Universidad. Adicionalmente, deberá adjuntar el respectivo certificado de inscripción. Estos deben entregarse en la oficina de Registro y Control Académico de la sede central de la Universidad Surcolombiana o a través del correo: <a href="mailto:registro@usco.edu.co" class="underline text-usco-vino font-bold">registro@usco.edu.co</a>
 
-**FECHAS ENTREGA DE DOCUMENTOS:** DEL 1 DE ABRIL AL 12 DE JUNIO DE 2025 hasta las 6:00 p.m.
+**FECHAS ENTREGA DE DOCUMENTOS:** <span class="text-blue-900 font-bold">DEL 15 DE SEPTIEMBRE AL 28 DE OCTUBRE DE 2025 A LAS 6:00 P.M.</span>
 
 **A TENER EN CUENTA:** El aspirante deberá entregar la documentación completa y en los términos que aquí se detallan. Si el aspirante no presenta la documentación completa en las fechas establecidas para ello, no será tenido en cuenta dentro del proceso de selección y admisión. La Universidad no se hace responsable por los documentos que no se reciban completos y en los plazos establecidos.`
             },
@@ -200,9 +200,9 @@ El Consejo Académico en el <a href="https://www.usco.edu.co/archivosUsuarios/21
 a). Presentar el documento expedido por el Ministerio del Interior que certifique su registro en el Censo de la comunidad indígena respectiva.
 b). O presentar "certificado de pertenencia de la comunidad indígena", con una vigencia no mayor a 3 meses, firmado por la autoridad registrada ante la Dirección de Asuntos Indígenas, ROM y Minorías del Ministerio del Interior para el año en curso, en donde, además, deberá señalarse el correo electrónico de la Comunidad Indígena, el cual debe estar activo y ser un único correo institucional de uso de la Autoridad Tradicional, si lo tuviere.
 
-**FECHAS ENTREGA DE DOCUMENTOS:** 1 DE ABRIL AL 12 DE JUNIO DE 2025 hasta las 6:00 p.m. deben ser entregados por el aspirante en la oficina de Registro y Control Académico de la sede central de la Universidad Surcolombiana o a través del correo: <a href="mailto:registro@usco.edu.co" class="underline text-usco-vino font-bold">registro@usco.edu.co</a>, adjuntado el respectivo certificado de inscripción, y el certificado de terminación de estudios de bachillerato en una institución educativa indígena (si es su caso), dentro del periodo de inscripciones de la presente convocatoria.
+**FECHAS ENTREGA DE DOCUMENTOS:** <span class="text-blue-900 font-bold">DEL 15 DE SEPTIEMBRE AL 28 DE OCTUBRE DE 2025 A LAS 6:00 P.M.</span> deben ser entregados por el aspirante en la oficina de Registro y Control Académico de la sede central de la Universidad Surcolombiana o a través del correo: <a href="mailto:registro@usco.edu.co" class="underline text-usco-vino font-bold">registro@usco.edu.co</a>, adjuntado el respectivo certificado de inscripción, y el certificado de terminación de estudios de bachillerato en una institución educativa indígena (si es su caso), dentro del periodo de inscripciones de la presente convocatoria.
 
-**FECHA PRESENTACIÓN PRUEBA INDÍGENA:** Viernes 13 DE JUNIO de 2025 a las 8:00 a.m. en el tercer piso de la Biblioteca de la Sede Central ubicada en Neiva. Los aspirantes que se inscriban bajo esta modalidad deberán presentar la prueba oral sobre el manejo del idioma indígena propio y/o prueba sobre realidad y cultura Indígena.
+**FECHA PRESENTACIÓN PRUEBA INDÍGENA:** Miercoles 29 DE OCTUBRE de 2025 a las 8:00 a.m. en el tercer piso de la Biblioteca de la Sede Central ubicada en Neiva. Los aspirantes que se inscriban bajo esta modalidad deberán presentar la prueba oral sobre el manejo del idioma indígena propio y/o prueba sobre realidad y cultura Indígena.
 
 **A TENER EN CUENTA:** La Universidad podrá verificar la veracidad de la información suministrada con el apoyo del CRIHU, también se apoyará en organizaciones indígenas de reconocida trayectoria y el Ministerio del Interior - Dirección de Asuntos Indígenas o quien haga sus veces.
 
@@ -224,7 +224,7 @@ b). Certificado de inscripción.
 c). Certificado en donde conste que cumplió con el ciclo complementario y el reporte de las calificaciones obtenidas.
 d). Examen de Estado para ingreso a la educación superior ICFES.
 
-**FECHAS ENTREGA DE DOCUMENTOS:** DEL 1 DE ABRIL AL 12 DE JUNIO DE 2025 hasta las 6:00 p.m.
+**FECHAS ENTREGA DE DOCUMENTOS:** <span class="text-blue-900 font-bold">DEL 15 DE SEPTIEMBRE AL 28 DE OCTUBRE DE 2025 A LAS 6:00 P.M.</span>
 
 **CORREOS ELECTRÓNICOS DE LOS PROGRAMAS DE LA FACULTAD DE EDUCACIÓN:**
 
@@ -238,7 +238,7 @@ d). Examen de Estado para ingreso a la educación superior ICFES.
 8. Licenciatura en Educación Artística: <a href="mailto:pedagogiainfantil@usco.edu.co" class="underline text-usco-vino font-bold">educacionartistica@usco.edu.co</a>
 
 
-**NOTA:** Directamente la Dirección de Registro y Control Académico y la Oficina de Liquidación de Derechos Pecuniarios, recibirán en medio físico, hasta el 15 DE JULIO DE 2025, el respectivo Acuerdo por parte del Consejo de la Facultad de Educación, relacionado con los Aspirantes Admitidos por la modalidad de convenio con ESCUELAS NORMALES. Los Aspirantes Admitidos se convocarán en el ÚLTIMO LLAMADO, el cual se publicará el 23 DE JULIO DE 2025.`
+**NOTA:** Directamente la Dirección de Registro y Control Académico y la Oficina de Liquidación de Derechos Pecuniarios, recibirán en medio físico, hasta el <span class="text-blue-900 font-bold">15 DE DICIEMBRE DE 2025</span>, el respectivo Acuerdo por parte del Consejo de la Facultad de Educación, relacionado con los Aspirantes Admitidos por la modalidad de convenio con ESCUELAS NORMALES. Los Aspirantes Admitidos se convocarán en el ÚLTIMO LLAMADO, el cual se publicará el <span class="text-blue-900 font-bold">14 DE ENERO DE 2026</span>.`
         },
         {
           name: 'Por Transferencia Académica',
@@ -256,9 +256,9 @@ d). Anexar certificado de calificaciones expedido por la Oficina de Registro y C
 e). No estar desvinculado por más de un (1) año de la Universidad de origen.
 f). Tener aprobadas todas las asignaturas hasta el semestre cursado.
 
-**FECHAS ENTREGA DE DOCUMENTOS:** DEL 1 DE ABRIL AL 12 DE JUNIO DE 2025 hasta las 6:00 p.m.
+**FECHAS ENTREGA DE DOCUMENTOS:** <span class="text-blue-900 font-bold">DEL 15 DE SEPTIEMBRE AL 28 DE OCTUBRE DE 2025 A LAS 6:00 P.M.</span>
 
-**Correos electrónicos de los programas académicos que aceptan transferencia académica en el PERIODO 2025-2**
+**Correos electrónicos de los programas académicos que aceptan transferencia académica en el PERIODO 2026-1**
 
 1. Ingeniería Agrícola: <a href="mailto:agricola@usco.edu.co" class="underline text-usco-vino font-bold">agricola@usco.edu.co</a>
 2. Ingeniería Agroindustrial: <a href="mailto:agroindustrial@usco.edu.co" class="underline text-usco-vino font-bold">agroindustrial@usco.edu.co</a>
@@ -299,7 +299,7 @@ f). Tener aprobadas todas las asignaturas hasta el semestre cursado.
 30. Comunicación Social y Periodismo: <a href="mailto:comunicacionsocial@usco.edu.co" class="underline text-usco-vino font-bold">comunicacionsocial@usco.edu.co</a>
 31. Antropología: <a href="mailto:antropologia@usco.edu.co" class="underline text-usco-vino font-bold">antropologia@usco.edu.co</a>
 
-**NOTA:** Directamente la Dirección de Registro y Control Académico y la Oficina de Liquidación de Derechos Pecuniarios, recibirán en medio físico hasta el 15 DE JULIO DE 2025 el respectivo Acuerdo por parte del Consejo de Facultad, relacionado con los Aspirantes Admitidos por la modalidad de TRANSFERENCIA ACADÉMICA. Los Aspirantes Admitidos se convocarán en el ÚLTIMO LLAMADO, el cual se publicará el 23 DE JULIO DE 2025.`
+**NOTA:** Directamente la Dirección de Registro y Control Académico y la Oficina de Liquidación de Derechos Pecuniarios, recibirán en medio físico hasta el <span class="text-blue-900 font-bold">15 DE DICIEMBRE DE 2025</span> el respectivo Acuerdo por parte del Consejo de Facultad, relacionado con los Aspirantes Admitidos por la modalidad de TRANSFERENCIA ACADÉMICA. Los Aspirantes Admitidos se convocarán en el ÚLTIMO LLAMADO, el cual se publicará el <span class="text-blue-900 font-bold">14 DE ENERO DE 2026</span>.`
         }
       ]
     },
@@ -337,45 +337,35 @@ f). Tener aprobadas todas las asignaturas hasta el semestre cursado.
       <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark">NEIVA</td>
       <td rowspan="4" class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-center align-middle">MIÉRCOLES 29 Y JUEVES 30 DE OCTUBRE DE 2025</td>
       <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark">Consultorio médico, Bienestar Universitario. Sede central.</td>
-      <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark">7:00 a.m. a 5:00 p.m. (jornada continua)</td>
+      <td rowspan="4" class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-center align-middle">7:00 a.m. a 5:00 p.m. (jornada continua)</td>
     </tr>
     <tr class="bg-usco-gris-pale bg-opacity-30">
       <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark">GARZÓN</td>
-      <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark">Centro de Salud USCO Garzón, Bloque Administrativo.</td>
-      <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark">8:00 a.m. a 4:00 p.m. (jornada continua)</td>
+      <td rowspan="3" class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-center align-middle">Consultorio médico de cada sede.</td>
     </tr>
     <tr>
       <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark">LA PLATA</td>
-      <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark">Consultorio médico, Edificio Principal La Plata.</td>
-      <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark">7:30 a.m. a 4:30 p.m. (jornada continua)</td>
     </tr>
     <tr class="bg-usco-gris-pale bg-opacity-30">
       <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark">PITALITO</td>
-      <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark">Sala de Bienestar, Campus Pitalito.</td>
-      <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark">8:00 a.m. a 5:00 p.m. (jornada continua)</td>
     </tr>
     <tr class="bg-usco-gris-pale bg-opacity-30">
       <td rowspan="4" class="border border-usco-gris-lighter p-3 font-usco-bold text-usco-gris-dark text-center align-middle">PRUEBA DE APTITUD FÍSICA</td>
       <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark">NEIVA</td>
       <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark">VIERNES 31 DE OCTUBRE DE 2025</td>
       <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark">Coliseo cubierto César Eduardo Medina Perdomo (contiguo a la piscina). Sede central.</td>
-      <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark">7:00 a.m.</td>
+      <td rowspan="4" class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-center align-middle">7:00 a.m.</td>
     </tr>
     <tr>
       <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark">GARZÓN</td>
       <td rowspan="3" class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-center align-middle">MARTES 4 DE NOVIEMBRE DE 2025</td>
-      <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark">Polideportivo USCO Garzón.</td>
-      <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark">8:00 a.m.</td>
+      <td rowspan="3" class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-center align-middle">Polideportivo de la sede.</td>
     </tr>
     <tr class="bg-usco-gris-pale bg-opacity-30">
       <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark">LA PLATA</td>
-      <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark">Cancha múltiple, Campus La Plata.</td>
-      <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark">7:30 a.m.</td>
     </tr>
     <tr>
       <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark">PITALITO</td>
-      <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark">Coliseo de deportes, Campus Pitalito.</td>
-      <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark">8:00 a.m.</td>
     </tr>
   </tbody>
 </table>**OBSERVACIONES A TENER EN CUENTA:**
@@ -610,7 +600,7 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
           
           <div class="bg-usco-vino-pale p-4 rounded-lg border-l-4 border-usco-vino">
             <h4 class="font-usco-bold text-usco-vino mb-2">FECHAS DE PAGO DEL PIN:</h4>
-            <p class="font-usco-bold">Desde el 1 DE ABRIL AL 10 DE JUNIO DE 2025 hasta las 4:00 p.m.</p>
+            <p class="font-usco-bold text-blue-900 font-bold">Desde el 15 DE SEPTIEMBRE AL 23 DE OCTUBRE DE 2025 hasta las 4:00 p.m.</p>
           </div>
 
           <div class="text-center mb-4">
@@ -667,7 +657,7 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
           
           <div class="bg-usco-vino-pale p-4 rounded-lg border-l-4 border-usco-vino">
             <h4 class="font-usco-bold text-usco-vino mb-2">FECHAS DE INSCRIPCIÓN:</h4>
-            <p class="font-usco-bold">DEL 1 DE ABRIL AL 12 DE JUNIO DE 2025 A LAS 4:00 P.M.</p>
+            <p class="font-usco-bold text-blue-900 font-bold">DEL 15 DE SEPTIEMBRE AL 28 DE OCTUBRE DE 2025 A LAS 4:00 P.M.</p>
           </div>
 
           <p>Una vez realizado el pago del PIN, deberá continuar con la inscripción diligenciando el formulario con el nombre(s) y apellido(s) registrado en el documento de identificación del ASPIRANTE que pagó el PIN. Es necesario tener al alcance de su mano la información para el diligenciamiento del formulario, según los siguientes documentos:</p>
@@ -682,7 +672,7 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
               </li>
               <li class="flex items-start">
                 <span class="text-usco-vino mr-2 text-lg flex-shrink-0">•</span>
-                <span>Pruebas de Estado (ICFES o Saber 11), para que digite el registro SNP. Recuerde que sólo se aceptan las pruebas de Estado (ICFES o Saber 11) con 10 años de vigencia, es decir, a partir del año 2015.</span>
+                <span>Pruebas de Estado (ICFES o Saber 11), para que digite el registro SNP. Recuerde que sólo se aceptan las pruebas de Estado (ICFES o Saber 11) con 10 años de vigencia, es decir, a partir del año 2016.</span>
               </li>
               <li class="flex items-start">
                 <span class="text-usco-vino mr-2 text-lg flex-shrink-0">•</span>
@@ -757,17 +747,17 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
           <div class="text-center">
             <p class="mb-4 text-sm font-usco-bold">Se recomienda usar navegador Firefox o Chrome para el mejor desempeño.</p>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-              <a href="#" class="inline-block bg-usco-vino hover:bg-usco-vino-dark text-white px-4 py-2 rounded-lg transition-colors duration-200 font-usco-bold text-xs">
-                📋 GUÍA DE USO PARA DILIGENCIAR EL FORMULARIO
+              <a href="https://www.usco.edu.co/archivosUsuarios/20/publicacion/ayudas/formulario-inscripcion-pregrado-usco.pdf" target="_blank" class="inline-block bg-usco-vino hover:bg-usco-vino-dark text-white px-4 py-2 rounded-lg transition-colors duration-200 font-usco-bold text-xs">
+                GUÍA DE USO PARA DILIGENCIAR EL FORMULARIO
+              </a>
+              <a href="https://gaitana.usco.edu.co/inscripciones_pregrado/login" target="_blank" class="inline-block bg-usco-vino hover:bg-usco-vino-dark text-white px-4 py-2 rounded-lg transition-colors duration-200 font-usco-bold text-xs">
+                DILIGENCIAR FORMULARIO DE INSCRIPCIÓN
               </a>
               <a href="#" class="inline-block bg-usco-vino hover:bg-usco-vino-dark text-white px-4 py-2 rounded-lg transition-colors duration-200 font-usco-bold text-xs">
-                📝 DILIGENCIAR FORMULARIO DE INSCRIPCIÓN
+                IMPRIMIR CERTIFICADO DE INSCRIPCIÓN
               </a>
               <a href="#" class="inline-block bg-usco-vino hover:bg-usco-vino-dark text-white px-4 py-2 rounded-lg transition-colors duration-200 font-usco-bold text-xs">
-                🖨️ IMPRIMIR CERTIFICADO DE INSCRIPCIÓN
-              </a>
-              <a href="#" class="inline-block bg-usco-vino hover:bg-usco-vino-dark text-white px-4 py-2 rounded-lg transition-colors duration-200 font-usco-bold text-xs">
-                👥 LISTADO DE INSCRITOS Y VERIFICACIÓN
+                LISTADO DE INSCRITOS Y VERIFICACIÓN
               </a>
             </div>
           </div>
@@ -776,7 +766,7 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
       'estado': `
         <h3 class="text-xl font-usco-condensed-bold mb-4 text-usco-vino">Estado de Inscripción</h3>
         <div class="space-y-4 text-usco-gris-dark font-usco">
-          <p>Verifique el estado de su inscripción en el periodo 2025-2. Al finalizar las tres (3) partes del formulario y grabe la inscripción, el sistema indicará <strong>"inscripción en proceso"</strong>. Cuando la Universidad verifique el registro del ICFES SNP indicará el estado correspondiente: <strong>"INSCRIPCIÓN VÁLIDA"</strong>, <strong>"INSCRIPCIÓN ANULADA"</strong> o <strong>"SNP NO ENCONTRADO"</strong>.</p>
+          <p>Verifique el estado de su inscripción en el periodo 2026-1. Al finalizar las tres (3) partes del formulario y grabe la inscripción, el sistema indicará <strong>"inscripción en proceso"</strong>. Cuando la Universidad verifique el registro del ICFES SNP indicará el estado correspondiente: <strong>"INSCRIPCIÓN VÁLIDA"</strong>, <strong>"INSCRIPCIÓN ANULADA"</strong> o <strong>"SNP NO ENCONTRADO"</strong>.</p>
           
           <div class="bg-usco-gris-pale p-4 rounded-lg">
             <h4 class="font-usco-bold text-usco-vino mb-2">Estados posibles de su inscripción:</h4>
@@ -784,7 +774,7 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
               <li class="flex items-start">
                 <span class="text-usco-vino mr-2 text-lg flex-shrink-0">•</span>
                 <div>
-                  <span class="text-usco-ocre-dark font-bold">Inscripción en proceso:</span>
+                  <span class="text-usco-ocre-dark font-bold">INSCRIPCIÓN EN PROCESO:</span>
                   <span class="text-sm ml-2">Se muestra inmediatamente después de completar el formulario</span>
                 </div>
               </li>
@@ -814,9 +804,8 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
 
           <div class="text-center">
             <h4 class="font-usco-bold text-usco-vino mb-3">ENLACE PARA VERIFICAR SU INSCRIPCIÓN E IMPRIMIR EL CERTIFICADO DE INSCRIPCIÓN</h4>
-            <p class="text-sm mb-4">EN EL ÍCONO DE LA ÚLTIMA COLUMNA DENOMINADA CERTIFICADO.</p>
-            <a href="#" class="inline-block bg-usco-vino hover:bg-usco-vino-dark text-white px-6 py-3 rounded-lg transition-colors duration-200 font-usco-bold text-sm shadow-lg hover:shadow-xl">
-              🔍 VERIFICAR ESTADO DE INSCRIPCIÓN Y CERTIFICADO
+            <a href="https://gaitana.usco.edu.co/inscripciones_pregrado/listado" target="_blank" class="inline-block bg-usco-vino hover:bg-usco-vino-dark text-white px-6 py-3 rounded-lg transition-colors duration-200 font-usco-bold text-sm shadow-lg hover:shadow-xl">
+              VERIFICAR ESTADO DE INSCRIPCIÓN Y CERTIFICADO
             </a>
           </div>
         </div>
@@ -824,7 +813,7 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
       'admitidos': `
         <h3 class="text-xl font-usco-condensed-bold mb-4 text-usco-vino">Lista de Admitidos</h3>
         <div class="space-y-4 text-usco-gris-dark font-usco">
-          <p>Consulte la fecha de publicación de resultados de los Admitidos, para el periodo 2025-2.</p>
+          <p>Consulte la fecha de publicación de resultados de los Admitidos, para el periodo 2026-1.</p>
           <p class="font-usco-bold text-usco-vino">La Universidad publicará el listado de los admitidos exclusivamente en este instructivo.</p>
           
           <div class="bg-usco-vino-pale p-4 rounded-lg border-l-4 border-usco-vino">
@@ -834,21 +823,21 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
                 <span class="text-usco-vino mr-2 text-lg flex-shrink-0">•</span>
                 <div>
                   <span class="font-usco-bold text-usco-vino">Publicación aspirantes admitidos en PRIMER LLAMADO:</span>
-                  <p class="font-usco-bold text-lg">VIERNES 20 DE JUNIO DE 2025</p>
+                  <span class="font-usco-bold text-lg text-blue-900">MIERCOLES 12 DE NOVIEMBRE DE 2025</span>
                 </div>
               </li>
               <li class="flex items-start">
                 <span class="text-usco-vino mr-2 text-lg flex-shrink-0">•</span>
                 <div>
                   <span class="font-usco-bold text-usco-vino">Publicación aspirantes admitidos en SEGUNDO LLAMADO:</span>
-                  <p class="font-usco-bold text-lg">JUEVES 10 DE JULIO DE 2025</p>
+                  <span class="font-usco-bold text-lg text-blue-900">MARTES 9 DE DICIEMBRE DE 2025</span>
                 </div>
               </li>
               <li class="flex items-start">
                 <span class="text-usco-vino mr-2 text-lg flex-shrink-0">•</span>
                 <div>
                   <span class="font-usco-bold text-usco-vino">Publicación aspirantes admitidos en ÚLTIMO LLAMADO:</span>
-                  <p class="font-usco-bold text-lg">MIÉRCOLES 23 DE JULIO DE 2025</p>
+                  <span class="font-usco-bold text-lg text-blue-900">MIERCOLES 14 DE ENERO DE 2026</span></span>
                 </div>
               </li>
             </ul>
@@ -870,7 +859,7 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
           </div>
 
           <div class="text-center">
-            <a href="#" class="inline-block bg-usco-vino hover:bg-usco-vino-dark text-white px-6 py-3 rounded-lg transition-colors duration-200 font-usco-bold text-sm shadow-lg hover:shadow-xl">
+            <a href="https://gaitana.usco.edu.co/inscripciones_pregrado/admitidos" target="_blank" class="inline-block bg-usco-vino hover:bg-usco-vino-dark text-white px-6 py-3 rounded-lg transition-colors duration-200 font-usco-bold text-sm shadow-lg hover:shadow-xl">
               LINK LISTADO DE ADMITIDOS
             </a>
           </div>
