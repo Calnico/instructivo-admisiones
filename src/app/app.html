@@ -18,7 +18,7 @@
         Acuerdo CA Número 004 del 25 de Marzo de 2025
       </a>
       <button (click)="showTermsDialog()" class="bg-gray-700 hover:bg-gray-800 text-white font-usco-bold py-4 px-6 rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl text-center cursor-pointer">
-        Términos de Referencia Legal del Proceso de Admisiones
+        Términos de referencia legal del proceso de admisiones
       </button>
       <a href="https://www.usco.edu.co/es/faq/admisiones/" target="_blank" class="bg-gray-700 hover:bg-gray-800 text-white font-usco-bold py-4 px-6 rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl flex items-center justify-center">
         Preguntas Frecuentes
@@ -156,8 +156,8 @@
       <div *ngIf="(selectedStep()!.number === 2 || selectedStep()!.number === 3 || selectedStep()!.number === 4) && selectedStep()!.modalidades && selectedStep()!.modalidades!.length > 0" class="p-4">
         <!-- Texto informativo antes de las modalidades (solo para paso 2) -->
         <div *ngIf="selectedStep()!.number === 2" class="bg-yellow-50 border-l-4 border-yellow-400 p-6 mb-6">
-          <h4 class="font-usco-bold text-usco-vino text-lg mb-3">
-            <a href="https://www.usco.edu.co/archivosUsuarios/16/publicacion/consejo_academico/acuerdo/acuerdo_003_de_2016.pdf" target="_blank" class="underline">
+          <h4 class="text-lg mb-3">
+            <a href="https://www.usco.edu.co/archivosUsuarios/16/publicacion/consejo_academico/acuerdo/acuerdo_003_de_2016.pdf" target="_blank" class="text-blue-600 underline hover:text-blue-800">
               Ver Reglamento. Lectura obligatoria.
             </a>
           </h4>
@@ -175,7 +175,7 @@
         
         <!-- Listado horizontal de modalidades -->
         <div class="mb-6">
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="grid gap-4" [ngClass]="(selectedStep()!.number === 3 || selectedStep()!.number === 4) ? 'grid-cols-1 md:grid-cols-3' : 'grid-cols-2 md:grid-cols-4'">
             <button 
               *ngFor="let modalidad of selectedStep()!.modalidades!; let i = index"
               (click)="selectModalidad(i)"
@@ -485,7 +485,7 @@
           Sólo se aceptan las pruebas de Estado (ICFES o Saber 11) con diez (10) años de vigencia, es decir, a partir del año 2016.
         </p>
         <p>
-          • En su calidad de aspirante a ingresar a la Universidad Surcolombiana, asume la responsabilidad legal de leer completamente para conocer el Reglamento de Inscripción, Admisión y Matrícula - Acuerdo Número 003 del 12 de abril de 2016 expedido por el Consejo Académico, normatividad que fija las condiciones, requisitos y demás normas y disposiciones internas que establece la Universidad Surcolombiana para el proceso de admisión a los Programas Académicos de Pregrado que ofrece. En consecuencia, es su absoluta responsabilidad atender todo el contenido del presente INSTRUCTIVO GUÍA PASO A PASO.
+          • En su calidad de aspirante a ingresar a la Universidad Surcolombiana, asume la responsabilidad legal de leer completamente para conocer el Reglamento de Inscripción, Admisión y Matrícula - Acuerdo Número 003 del 12 de abril de 2016 expedido por el Consejo Académico, normatividad que fija las condiciones, requisitos y demás normas y disposiciones internas que establece la Universidad Surcolombiana para el proceso de admisión a los Programas Académicos de Pregrado que ofrece. En consecuencia, es su absoluta responsabilidad atender todo el contenido del presente INSTRUCTIVO PASO A PASO.
         </p>
         
         <p>
@@ -493,11 +493,11 @@
         </p>
         
         <p>
-          • Es de indicar que, la Universidad Surcolombiana ha implementado la virtualidad para el proceso de la matrícula financiera y académica; ante lo cual, si usted adquiere la calidad de admitido(a) tiene la absoluta responsabilidad de cargar la documentación reglamentaria a través de la plataforma tecnológica dispuesta para tal fin, en las fechas establecidas en cada uno de los llamados. En el numeral 9 de este Instructivo Guía Paso a Paso se indica la documentación que debe tener lista a cargar cuando sea admitido(a). De no cumplir con los requisitos y documentación exigida para la matrícula financiera y académica, perderá el cupo.
+          • Es de indicar que, la Universidad Surcolombiana ha implementado la virtualidad para el proceso de la matrícula financiera y académica; ante lo cual, si usted adquiere la calidad de admitido(a) tiene la absoluta responsabilidad de cargar la documentación reglamentaria a través de la plataforma tecnológica dispuesta para tal fin, en las fechas establecidas en cada uno de los llamados.
         </p>
         
         <p>
-          Aspirante, para la Universidad Surcolombiana es grato que desee ser parte de la comunidad universitaria; por ello, es indispensable que lea la totalidad de la información que se ha publicado para usted. Realice la completa lectura de los nueve (9) pasos de este INSTRUCTIVO GUÍA y en consecuencia tenga la suficiente claridad del proceso de inscripción, admisión y matrícula.
+          Aspirante, para la Universidad Surcolombiana es grato que desee ser parte de la comunidad universitaria; por ello, es indispensable que lea la totalidad de la información que se ha publicado para usted.
         </p>
         
       </div>
@@ -578,7 +578,7 @@
 
         <!-- Lo que no incluye -->
         <div>
-          <h4 class="font-usco-bold text-usco-vino text-lg mb-3">EL BENEFICIO NO INCLUYE:</h4>
+          <h4 class="font-usco-bold text-usco-vino text-lg mb-3">EL BENEFICIO NO INCLUYE</h4>
           <ul class="ml-4 space-y-1">
             <li>- El pago de derechos pecuniarios por cursos intersemestrales.</li>
             <li>- Derechos de grado.</li>
@@ -648,8 +648,8 @@
 
         <!-- Más información -->
         <div class="bg-usco-gris-pale border border-usco-gris-lighter rounded p-4">
-          <p class="font-usco-bold text-usco-vino mb-2">MÁS INFORMACIÓN EN:</p>
-          <a href="https://www.usco.edu.co/documento/486161" target="_blank" class="text-usco-vino font-usco-bold underline hover:text-usco-vino-dark">
+          <p class="font-usco-bold text-usco-vino mb-2">MÁS INFORMACIÓN EN</p>
+          <a href="https://www.usco.edu.co/documento/486161" target="_blank" class="text-blue-600 underline hover:text-blue-800">
             https://www.usco.edu.co/documento/486161
           </a>
         </div>
