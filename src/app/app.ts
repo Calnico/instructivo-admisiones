@@ -165,11 +165,11 @@ La Universidad otorgará un (1) cupo especial en cada uno de los Programas de Pr
           acordeones: [
             {
               titulo: '1. Comunidades Negras, Afrocolombianas, Raizales y Palanqueras',
-              contenido: `**ENTREGA DE DOCUMENTOS** El aspirante que pertenezca y se inscriba por este régimen especial, deberá entregar el documento oficial expedido por el Ministerio del Interior que acredite la condición, el cual debe tener una vigencia de expedición no mayor de tres (3) meses a la fecha de presentación en la Universidad. Adicionalmente, deberá adjuntar el respectivo certificado de inscripción. Estos deben entregarse en la oficina de Registro y Control Académico de la sede central de la Universidad Surcolombiana o a través del correo: <a href="mailto:registro@usco.edu.co" class="underline text-blue-600">registro@usco.edu.co</a>
+              contenido: `**ENTREGA DE DOCUMENTOS** El aspirante que pertenezca y se inscriba por este régimen especial, debe entregar el documento oficial expedido por el Ministerio del Interior que acredite la condición, el cual debe tener una vigencia de expedición no mayor de tres (3) meses a la fecha de presentación en la Universidad. Adicionalmente, debe adjuntar el respectivo certificado de inscripción. Estos deben entregarse en la oficina de Registro y Control Académico de la sede central de la Universidad Surcolombiana o a través del correo: <a href="mailto:registro@usco.edu.co" class="underline text-blue-600">registro@usco.edu.co</a>
 
 **FECHAS ENTREGA DE DOCUMENTOS** <span class="text-blue-900 font-bold">DEL 15 DE SEPTIEMBRE AL 28 DE OCTUBRE DE 2025 A LAS 6:00 P.M.</span>
 
-**PARA TENER EN CUENTA** El aspirante deberá entregar la documentación completa y en los términos que aquí se detallan. Si el aspirante no presenta la documentación completa en las fechas establecidas para ello, no será tenido en cuenta dentro del proceso de selección y admisión. La Universidad no se hace responsable por los documentos que no se reciban completos y en los plazos establecidos.`
+**PARA TENER EN CUENTA** El aspirante deberá entregar la documentación completa y en los términos que aquí se detallan. Si el aspirante no presenta la documentación completa en las fechas establecidas, no será tenido en cuenta dentro del proceso de selección y admisión. La Universidad no se hace responsable por los documentos que no se reciban completos y en los plazos establecidos.`
             },
             {
               titulo: '2. Desplazados por la Violencia',
@@ -202,7 +202,7 @@ b). O presentar "certificado de pertenencia de la comunidad indígena", con una 
 
 **FECHAS ENTREGA DE DOCUMENTOS** <span class="text-blue-900 font-bold">DEL 15 DE SEPTIEMBRE AL 28 DE OCTUBRE DE 2025 A LAS 6:00 P.M.</span> deben ser entregados por el aspirante en la oficina de Registro y Control Académico de la sede central de la Universidad Surcolombiana o a través del correo: <a href="mailto:registro@usco.edu.co" class="underline text-blue-600">registro@usco.edu.co</a>, adjuntado el respectivo certificado de inscripción, y el certificado de terminación de estudios de bachillerato en una institución educativa indígena (si es su caso), dentro del periodo de inscripciones de la presente convocatoria.
 
-**FECHA PRESENTACIÓN PRUEBA INDÍGENA** <span class="text-blue-900 font-bold">Miercoles 29 DE OCTUBRE de 2025 a las 8:00 A.M.</span> en el tercer piso de la Biblioteca de la Sede Central ubicada en Neiva. Los aspirantes que se inscriban bajo esta modalidad deberán presentar la prueba oral sobre el manejo del idioma indígena propio y/o prueba sobre realidad y cultura Indígena.
+**FECHA PRESENTACIÓN PRUEBA** <span class="text-blue-900 font-bold">Miercoles 29 DE OCTUBRE de 2025 a las 8:00 A.M.</span> en el tercer piso de la Biblioteca de la Sede Central ubicada en Neiva. Los aspirantes que se inscriban bajo esta modalidad deberán presentar la prueba oral sobre el manejo del idioma indígena propio y/o prueba sobre realidad y cultura Indígena.
 
 **PARA TENER EN CUENTA** La Universidad podrá verificar la veracidad de la información suministrada con el apoyo del CRIHU, también se apoyará en organizaciones indígenas de reconocida trayectoria y el Ministerio del Interior - Dirección de Asuntos Indígenas o quien haga sus veces.
 
@@ -214,8 +214,7 @@ El aspirante deberá entregar la documentación completa y en los términos que 
         },
         {
           name: 'Por Convenio con Escuelas Normales',
-          content: `**MODALIDAD DE INSCRIPCIÓN POR CONVENIO CON ESCUELAS NORMALES**
-En virtud de los convenios firmados entre la Universidad Surcolombiana y las Escuelas Normales de Neiva, Gigante y Pitalito, al amparo del Decreto 3012 de 1997, los egresados de dichas Normales ingresan por esta modalidad a los Programas ofrecidos por la Facultad de Educación, como aspirantes especiales; a quienes ingresen, una vez matriculados se les efectuará el estudio de homologación del "Ciclo Complementario".
+          content: `**MODALIDAD DE INSCRIPCIÓN POR CONVENIO CON ESCUELAS NORMALES**En virtud de los convenios firmados entre la Universidad Surcolombiana y las Escuelas Normales de Neiva, Gigante y Pitalito, al amparo del Decreto 3012 de 1997, los egresados de dichas Normales ingresan por esta modalidad a los Programas ofrecidos por la Facultad de Educación, como aspirantes especiales; a quienes ingresen, una vez matriculados se les efectuará el estudio de homologación del "Ciclo Complementario".
 
 **ENTREGA DE DOCUMENTOS** Para el estudio de ingreso a través de Convenio con Escuelas Normales, el aspirante inscrito deberá entregar de manera presencial o enviar al correo electrónico del programa académico al cual se inscribió, (los correos se indican más adelante), los siguientes documentos:
 
@@ -236,14 +235,11 @@ d). Examen de Estado para ingreso a la educación superior ICFES.
 6. Licenciatura en Ciencias Naturales y Educación Ambiental: <a href="mailto:cienciasnaturales@usco.edu.co" class="underline text-blue-600">cienciasnaturales@usco.edu.co</a>
 7. Licenciatura en Educación Infantil: <a href="mailto:pedagogiainfantil@usco.edu.co" class="underline text-blue-600">pedagogiainfantil@usco.edu.co</a>
 8. Licenciatura en Educación Artística: <a href="mailto:pedagogiainfantil@usco.edu.co" class="underline text-blue-600">educacionartistica@usco.edu.co</a>
-
-
 **NOTA** Directamente la Dirección de Registro y Control Académico y la Oficina de Liquidación de Derechos Pecuniarios, recibirán en medio físico, hasta el <span class="text-blue-900 font-bold">15 DE DICIEMBRE DE 2025</span>, el respectivo Acuerdo por parte del Consejo de la Facultad de Educación, relacionado con los Aspirantes Admitidos por la modalidad de convenio con ESCUELAS NORMALES. Los Aspirantes Admitidos se convocarán en el ÚLTIMO LLAMADO, el cual se publicará el <span class="text-blue-900 font-bold">14 DE ENERO DE 2026</span>.`
         },
         {
           name: 'Por Transferencia Académica',
-          content: `**MODALIDAD DE INSCRIPCIÓN POR TRANSFERENCIA ACADÉMICA**
-¿Qué significa Transferencia Académica? es el paso de los estudiantes, bien sea de un Programa con registro vigente del ICFES de otra Universidad, hacia la Universidad Surcolombiana, o entre Programas de esta misma Universidad.
+          content: `**MODALIDAD DE INSCRIPCIÓN POR TRANSFERENCIA ACADÉMICA**¿Qué significa Transferencia Académica? es el paso de los estudiantes, bien sea de un Programa con registro vigente del ICFES de otra Universidad, hacia la Universidad Surcolombiana, o entre Programas de esta misma Universidad.
 
 Quien aspire a ingresar por esta modalidad debe inscribirse formalmente seleccionando en el formulario de inscripción la opción de Transferencia Académica. La transferencia se realizará conforme a lo establecido en el Acuerdo del Consejo Superior 019 del 6 de Mayo de 2005, adicionando por el Acuerdo 038 del 20 de Septiembre de 2005.
 
@@ -290,7 +286,6 @@ f). Tener aprobadas todas las asignaturas hasta el semestre cursado.
 24. Licenciatura en Ciencias Naturales y Educación Ambiental: <a href="mailto:cienciasnaturales@usco.edu.co" class="underline text-blue-600">cienciasnaturales@usco.edu.co</a>
 25. Licenciatura en Educación Infantil: <a href="mailto:pedagogiainfantil@usco.edu.co" class="underline text-blue-600">pedagogiainfantil@usco.edu.co</a>
 26. Licenciatura en Educación Artística: <a href="mailto:pedagogiainfantil@usco.edu.co" class="underline text-blue-600">educacionartistica@usco.edu.co</a>
-
 
 27. Medicina: <a href="mailto:medicina@usco.edu.co" class="underline text-blue-600">medicina@usco.edu.co</a>
 28. Enfermería: <a href="mailto:enfermeria@usco.edu.co" class="underline text-blue-600">enfermeria@usco.edu.co</a>
@@ -371,7 +366,7 @@ f). Tener aprobadas todas las asignaturas hasta el semestre cursado.
 2) Para presentar la prueba de aptitud física, el aspirante debe aportar el certificado de inscripción y el documento de identificación al docente encargado de la misma.
 3) El aspirante menor de edad debe igualmente presentar consentimiento informado de los Padres de familia o Acudiente, para realizar la prueba de aptitud física, asumiendo las implicaciones de la misma.
 4) Si el médico examinante encuentra alguna anomalía física, se requerirá certificación de aptitud por parte de la E.P.S. para presentar la prueba física. Dicha situación será analizada en el Comité de Admisiones.
-5) La prueba de aptitud física es de carácter obligatorio para la selección de los aspirantes en este Programa. Quien no se presente en la fecha, hora y lugar indicado no obtendrá calificación en la respectiva prueba.`
+5) La prueba de aptitud física es de carácter obligatorio para la selección de los aspirantes en este Programa. Quien no se presente en la fecha, hora y lugar indicado no obtendrá calificación.`
         },
         {
           name: '4.2 Prueba oral idioma y cultura indígena',
@@ -395,7 +390,7 @@ Los aspirantes de las COMUNIDADES INDÍGENAS que se inscriban bajo esta modalida
     </tr>
   </tbody>
 </table><a href="https://www.usco.edu.co/archivosUsuarios/21/publicacion/consejo_academico/acuerdo/acuerdo_014_de_2021.pdf" target="_blank" class="underline text-blue-600">Ver Acuerdo CA número 014 del 19 de noviembre de 2021</a>.
-Ver numeral 2. MODALIDADES DE INSCRIPCIÓN, Regimen Especial: Comunidades Indígenas, del PRESENTE INSTRUCTIVO.`
+Ver numeral 2. MODALIDADES DE INSCRIPCIÓN, Régimen Especial: Comunidades Indígenas, del presente instructivo.`
         },
         {
           name: '4.3 Prueba de Aptitud para Educación Artística',
@@ -419,7 +414,7 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
     </tr>
   </tbody>
 </table>**PARA TENER EN CUENTA**1) Se advierte que ningún aspirante puede presentar la prueba específica, si no se encuentra inscrito en el sistema. El certificado de inscripción y el documento de identidad, serán solicitados al momento de realizar la prueba.
-2) La prueba de aptitud artística es de carácter obligatorio para la selección de los aspirantes en este Programa. Quien no se presente a realizar la prueba en los días indicados, no obtendrá calificación en la respectiva prueba.`
+2) La prueba de aptitud artística es de carácter obligatorio para la selección de los aspirantes en este Programa. Quien no se presente a realizar la prueba en los días indicados, no obtendrá calificación.`
         }
       ]
     },
@@ -586,7 +581,7 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
   private setNewIconInfo(iconType: string) {
     const iconInfoMap: { [key: string]: string } = {
       'pin': `
-        <h3 class="text-xl font-usco-condensed-bold mb-4 text-usco-vino">1. PIN</h3>
+        <h3 class="text-xl font-usco-condensed-bold mb-4 text-usco-vino">5.1 COMPRE EL PIN</h3>
         <div class="space-y-4 text-usco-gris-dark font-usco">
           <p>Aspirante, es importante que tenga en cuenta la fecha, valor y link para el pago del Derecho de Inscripción (PIN).</p>
           
@@ -607,7 +602,11 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
               GENERAR COMPROBANTE DE PAGO DE INSCRIPCIÓN
             </a>
           </div>
-
+          <div class="bg-red-50 border-l-4 border-red-500 p-4 rounded-lg">
+            <h4 class="font-usco-bold text-red-700 mb-2">IMPORTANTE</h4>
+            <p >ASPIRANTE, la inscripción se formaliza con el diligenciamiento del formulario de inscripción. PAGAR SOLO EL PIN, NO LO ACREDITA COMO INSCRITO.</p>
+            <p >Pasada la fecha y hora indicada no se permite realizar nuevos registros. <strong>NO DEJE PARA ÚLTIMA HORA EL DILIGENCIAMIENTO DEL FORMULARIO DE INSCRIPCIÓN.</strong></p>
+          </div>
           <div class="bg-usco-gris-pale p-4 rounded-lg">
             <h4 class="font-usco-bold text-usco-vino mb-3">PARA TENER EN CUENTA</h4>
             <ul class="space-y-2 text-sm">
@@ -644,7 +643,7 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
         </div>
       `,
       'formulario': `
-        <h3 class="text-xl font-usco-condensed-bold mb-4 text-usco-vino">2. Formulario de Inscripción</h3>
+        <h3 class="text-xl font-usco-condensed-bold mb-4 text-usco-vino">5.2 Diligencie el Formulario de Inscripción</h3>
         <div class="space-y-4 text-usco-gris-dark font-usco">
           
           <div class="bg-usco-vino-pale p-4 rounded-lg border-l-4 border-usco-vino">
@@ -656,7 +655,7 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
 
           <div class="bg-usco-ocre-pale p-4 rounded-lg border-l-4 border-usco-ocre-dark">
             <h4 class="font-usco-bold text-usco-vino mb-3">INFORMACIÓN PARA DILIGENCIAR EL FORMULARIO DE INSCRIPCIÓN</h4>
-            <p class="text-sm mb-3 italic">(En caso de ser admitido deberá adjuntar estos mismos documentos en el paso 9 de este instructivo)</p>
+            <p class="text-sm mb-3 italic">(En caso de ser admitido deberá adjuntar estos mismos documentos en el paso 5.6 de este instructivo)</p>
             <ul class="space-y-2 text-sm">
               <li class="flex items-start">
                 <span class="text-usco-vino mr-2 text-lg flex-shrink-0">•</span>
@@ -696,12 +695,6 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
             </ul>
           </div>
 
-          <div class="bg-red-50 border-l-4 border-red-500 p-4 rounded-lg">
-            <h4 class="font-usco-bold text-red-700 mb-2">IMPORTANTE</h4>
-            <p class="text-red-700 font-usco-bold">ASPIRANTE, la inscripción se formaliza con el REGISTRO de las tres (3) partes del formulario de inscripción. PAGAR SOLO EL PIN, NO LO ACREDITA COMO INSCRITO.</p>
-            <p class="text-red-700 mt-2">Pasada la fecha y hora indicada no se permite realizar nuevos registros. <strong>NO DEJE PARA ÚLTIMA HORA EL DILIGENCIAMIENTO DEL FORMULARIO DE INSCRIPCIÓN.</strong></p>
-          </div>
-
           <div class="bg-usco-gris-pale p-4 rounded-lg">
             <h4 class="font-usco-bold text-usco-vino mb-3">PARA TENER EN CUENTA</h4>
             <ul class="space-y-2 text-sm">
@@ -727,38 +720,21 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
               </li>
               <li class="flex items-start">
                 <span class="text-usco-vino mr-2 text-lg flex-shrink-0">•</span>
-                <span>Es importante que sea preciso(a) al diligenciar las tres (3) partes del formulario de inscripción. De no diligenciar todas las partes, el sistema NO lo registra como inscrito. Revise bien antes de grabar la información.</span>
+                <span>Es importante que sea preciso(a) al diligenciar el formulario de inscripción. De no diligenciar todas las partes, el sistema NO lo registra como inscrito. Revise bien antes de grabar la información.</span>
               </li>
               <li class="flex items-start">
                 <span class="text-usco-vino mr-2 text-lg flex-shrink-0">•</span>
-                <span>Una vez grabe la información de las tres (3) partes del formulario de inscripción, el sistema no permite correcciones o modificaciones.</span>
+                <span>Una vez grabe la información del formulario de inscripción, el sistema no permite correcciones o modificaciones.</span>
               </li>
             </ul>
           </div>
-
-          <div class="text-center">
-            <p class="mb-4 text-sm font-usco-bold">Se recomienda usar navegador Firefox o Chrome para el mejor desempeño.</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-              <a href="https://www.usco.edu.co/archivosUsuarios/20/publicacion/ayudas/formulario-inscripcion-pregrado-usco.pdf" target="_blank" class="inline-block bg-usco-vino hover:bg-usco-vino-dark text-white px-4 py-2 rounded-lg transition-colors duration-200 font-usco-bold text-xs">
-                GUÍA DE USO PARA DILIGENCIAR EL FORMULARIO
-              </a>
-              <a href="https://gaitana.usco.edu.co/inscripciones_pregrado/login" target="_blank" class="inline-block bg-usco-vino hover:bg-usco-vino-dark text-white px-4 py-2 rounded-lg transition-colors duration-200 font-usco-bold text-xs">
-                DILIGENCIAR FORMULARIO DE INSCRIPCIÓN
-              </a>
-              <a href="#" class="inline-block bg-usco-vino hover:bg-usco-vino-dark text-white px-4 py-2 rounded-lg transition-colors duration-200 font-usco-bold text-xs">
-                IMPRIMIR CERTIFICADO DE INSCRIPCIÓN
-              </a>
-              <a href="#" class="inline-block bg-usco-vino hover:bg-usco-vino-dark text-white px-4 py-2 rounded-lg transition-colors duration-200 font-usco-bold text-xs">
-                LISTADO DE INSCRITOS Y VERIFICACIÓN
-              </a>
-            </div>
           </div>
         </div>
       `,
       'estado': `
-        <h3 class="text-xl font-usco-condensed-bold mb-4 text-usco-vino">3. Estado de Inscripción</h3>
+        <h3 class="text-xl font-usco-condensed-bold mb-4 text-usco-vino">5.3 Verifique el Estado de la Inscripción</h3>
         <div class="space-y-4 text-usco-gris-dark font-usco">
-          <p>Verifique el estado de su inscripción en el periodo 2026-1. Al finalizar las tres (3) partes del formulario y grabe la inscripción, el sistema indicará <strong>"inscripción en proceso"</strong>. Cuando la Universidad verifique el registro del ICFES SNP indicará el estado correspondiente: <strong>"INSCRIPCIÓN VÁLIDA"</strong>, <strong>"INSCRIPCIÓN ANULADA"</strong> o <strong>"SNP NO ENCONTRADO"</strong>.</p>
+          <p>Verifique el estado de su inscripción. Al terminar el diligenciamiento del formulario, verifique la información registrada y grabe su inscripción. El sistema indicará <strong>"INSCRIPCIÓN EN PROCESO"</strong>. Cuando la Universidad verifique el registro del ICFES SNP indicará el estado correspondiente: <strong>"INSCRIPCIÓN VÁLIDA"</strong>, <strong>"INSCRIPCIÓN ANULADA"</strong> o <strong>"SNP NO ENCONTRADO"</strong>.</p>
           
           <div class="bg-usco-gris-pale p-4 rounded-lg">
             <h4 class="font-usco-bold text-usco-vino mb-2">Estados posibles de su inscripción</h4>
@@ -766,28 +742,28 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
               <li class="flex items-start">
                 <span class="text-usco-vino mr-2 text-lg flex-shrink-0">•</span>
                 <div>
-                  <span class="text-usco-ocre-dark font-bold">INSCRIPCIÓN EN PROCESO:</span>
+                  <span><strong>INSCRIPCIÓN EN PROCESO:</strong></span>
                   <span class="text-sm ml-2">Se muestra inmediatamente después de completar el formulario</span>
                 </div>
               </li>
               <li class="flex items-start">
                 <span class="text-usco-vino mr-2 text-lg flex-shrink-0">•</span>
                 <div>
-                  <span class="text-green-600 font-bold">INSCRIPCIÓN VÁLIDA:</span>
+                  <span><strong>INSCRIPCIÓN VÁLIDA:</strong></span>
                   <span class="text-sm ml-2">Su inscripción ha sido verificada y aprobada</span>
                 </div>
               </li>
               <li class="flex items-start">
                 <span class="text-usco-vino mr-2 text-lg flex-shrink-0">•</span>
                 <div>
-                  <span class="text-red-600 font-bold">INSCRIPCIÓN ANULADA:</span>
+                  <span><strong>INSCRIPCIÓN ANULADA:</strong></span>
                   <span class="text-sm ml-2">Problemas con la verificación de datos</span>
                 </div>
               </li>
               <li class="flex items-start">
                 <span class="text-usco-vino mr-2 text-lg flex-shrink-0">•</span>
                 <div>
-                  <span class="text-orange-600 font-bold">SNP NO ENCONTRADO:</span>
+                  <span><strong>SNP NO ENCONTRADO:</strong></span>
                   <span class="text-sm ml-2">El número de registro ICFES no fue encontrado</span>
                 </div>
               </li>
@@ -795,7 +771,6 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
           </div>
 
           <div class="text-center">
-            <h4 class="font-usco-bold text-usco-vino mb-3">ENLACE PARA VERIFICAR SU INSCRIPCIÓN E IMPRIMIR EL CERTIFICADO DE INSCRIPCIÓN</h4>
             <a href="https://gaitana.usco.edu.co/inscripciones_pregrado/listado" target="_blank" class="inline-block bg-usco-vino hover:bg-usco-vino-dark text-white px-6 py-3 rounded-lg transition-colors duration-200 font-usco-bold text-sm shadow-lg hover:shadow-xl">
               VERIFICAR ESTADO DE INSCRIPCIÓN Y CERTIFICADO
             </a>
@@ -803,12 +778,10 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
         </div>
       `,
       'admitidos': `
-        <h3 class="text-xl font-usco-condensed-bold mb-4 text-usco-vino">4. Lista de Admitidos</h3>
+        <h3 class="text-xl font-usco-condensed-bold mb-4 text-usco-vino">5.4 Consulte las Fechas de Admitidos</h3>
         <div class="space-y-4 text-usco-gris-dark font-usco">
-          <p>Consulte la fecha de publicación de resultados de los Admitidos, para el periodo 2026-1.</p>
-          <p class="font-usco-bold text-usco-vino">La Universidad publicará el listado de los admitidos exclusivamente en este instructivo.</p>
-          
-          <div class="bg-usco-vino-pale p-4 rounded-lg border-l-4 border-usco-vino">
+          <p>La Universidad publicará el listado de los admitidos exclusivamente en este instructivo.</p>
+          <div class="bg-usco-gris-pale p-4 rounded-lg">
             <h4 class="font-usco-bold text-usco-vino mb-3">FECHAS DE PUBLICACIÓN DE ADMITIDOS</h4>
             <ul class="space-y-3">
               <li class="flex items-start">
@@ -835,7 +808,7 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
             </ul>
           </div>
 
-          <div class="bg-usco-gris-pale p-4 rounded-lg">
+          <div class="bg-usco-vino-pale p-4 rounded-lg border-l-4 border-usco-vino">
             <h4 class="font-usco-bold text-usco-vino mb-2">INFORMACIÓN DEL ÚLTIMO LLAMADO</h4>
             <p class="text-sm">Surtida la matrícula del segundo llamado, el Comité de Admisiones distribuirá los cupos faltantes en cada uno de los Programas Académicos, teniendo en cuenta:</p>
             <ul class="mt-2 space-y-1 text-sm">
@@ -852,13 +825,13 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
 
           <div class="text-center">
             <a href="https://gaitana.usco.edu.co/inscripciones_pregrado/admitidos" target="_blank" class="inline-block bg-usco-vino hover:bg-usco-vino-dark text-white px-6 py-3 rounded-lg transition-colors duration-200 font-usco-bold text-sm shadow-lg hover:shadow-xl">
-              LINK LISTADO DE ADMITIDOS
+              VER LISTADO DE ADMITIDOS
             </a>
           </div>
         </div>
       `,
       'financiera': `
-        <h3 class="text-xl font-usco-condensed-bold mb-4 text-usco-vino">5. Matrícula Financiera</h3>
+        <h3 class="text-xl font-usco-condensed-bold mb-4 text-usco-vino">5.5 Matrícula Financiera</h3>
         <div class="space-y-4 text-usco-gris-dark font-usco">
           <p>Documentación requerida para la liquidación de Matrícula, cronograma y fechas de pago.</p>
           
@@ -916,7 +889,7 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
             </ul>
           </div>
 
-          <div class="bg-usco-gris-pale p-4 rounded-lg">
+          <div>
             <h4 class="font-usco-bold text-usco-vino mb-3">PARA TENER EN CUENTA</h4>
             <ul class="space-y-2 text-sm">
               <li class="flex items-start">
@@ -938,33 +911,33 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
             </ul>
           </div>
 
-          <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded-lg">
-            <h4 class="font-usco-bold text-yellow-700 mb-2">OPORTUNIDADES PARA SUBSANAR</h4>
-            <p class="text-yellow-700 text-sm mb-2">En caso de detectar errores u omisiones en la documentación presentada tendrá máximo dos (2) oportunidades para subsanarlos.</p>
-            <ul class="space-y-1 text-sm text-yellow-700">
+          <div>
+            <h4 class="font-usco-bold text-usco-vino mb-2">OPORTUNIDADES PARA SUBSANAR</h4>
+            <p class="text-usco-gris-dark text-sm mb-2">En caso de detectar errores u omisiones en la documentación presentada tendrá máximo dos (2) oportunidades para subsanarlos.</p>
+            <ul class="space-y-1 text-sm text-usco-gris-dark">
               <li><strong>Primera oportunidad:</strong> Se notificará a través del correo electrónico registrado en el formulario de inscripción y de la plataforma en línea, sobre los errores detectados y el plazo para subsanarlos.</li>
               <li><strong>Última oportunidad:</strong> En caso de que persistan errores o se detecten nuevas omisiones, se notificará nuevamente sobre los errores y el plazo para subsanarlos definitivamente.</li>
             </ul>
-            <p class="text-yellow-700 text-sm mt-2 font-bold">Nota: El incumplimiento de las dos (2) oportunidades para subsanar resultará en la exclusión del proceso.</p>
+            <p class="text-usco-vino text-sm mt-2 font-bold">Nota: El incumplimiento de las dos (2) oportunidades para subsanar resultará en la exclusión del proceso.</p>
           </div>
 
-          <div class="bg-red-50 border-l-4 border-red-500 p-4 rounded-lg">
-            <h4 class="font-usco-bold text-red-700 mb-2">IMPORTANTE</h4>
-            <ul class="space-y-2 text-sm text-red-700">
+          <div class="bg-usco-gris-pale border-l-4 border-usco-gris-lighter p-4 rounded-lg">
+            <h4 class="font-usco-bold text-usco-vino mb-2">IMPORTANTE</h4>
+            <ul class="space-y-2 text-sm text-usco-gris-dark">
               <li class="flex items-start">
-                <span class="text-red-700 mr-2 text-lg flex-shrink-0">•</span>
+                <span class="text-usco-vino mr-2 text-lg flex-shrink-0">•</span>
                 <span>La Universidad da por concluida la ETAPA 1. MATRÍCULA FINANCIERA, cuando el Grupo de Liquidación de Derechos Pecuniarios realice la validación o rechazo de la totalidad de los documentos exigidos como obligatorios.</span>
               </li>
               <li class="flex items-start">
-                <span class="text-red-700 mr-2 text-lg flex-shrink-0">•</span>
+                <span class="text-usco-vino mr-2 text-lg flex-shrink-0">•</span>
                 <span>Se acepta como cumplida la entrega de la totalidad de la documentación exigida, a través del cargue en el link dispuesto, por lo cual, no es válido el envío por correo electrónico ni la entrega en físico.</span>
               </li>
               <li class="flex items-start">
-                <span class="text-red-700 mr-2 text-lg flex-shrink-0">•</span>
+                <span class="text-usco-vino mr-2 text-lg flex-shrink-0">•</span>
                 <span>No habrá lugar a devolución del dinero pagado por concepto de matrícula financiera, para aquellos aspirantes que realicen la Matrícula Académica y cancelen el período académico, en cualquier momento, posterior al proceso de admisiones, de conformidad con la Resolución 052B de 2020, Artículo 2 numeral 2.2 literal D y parágrafo 1.</span>
               </li>
               <li class="flex items-start">
-                <span class="text-red-700 mr-2 text-lg flex-shrink-0">•</span>
+                <span class="text-usco-vino mr-2 text-lg flex-shrink-0">•</span>
                 <span>Quienes no se encuentren a paz y salvo con la Universidad por todo concepto, no podrán matricularse a un nuevo período académico. (art. 11 del Acuerdo 050 de 2015).</span>
               </li>
             </ul>
@@ -978,6 +951,7 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
                   <tr class="bg-usco-vino text-white">
                     <th class="border border-usco-gris-lighter p-3 text-left font-usco-bold text-sm">ADMITIDOS</th>
                     <th class="border border-usco-gris-lighter p-3 text-left font-usco-bold text-sm">FECHA PARA CARGAR DOCUMENTOS<br>(Etapa 1. MATRÍCULA FINANCIERA)</th>
+                    <th class="border border-usco-gris-lighter p-3 text-left font-usco-bold text-sm">SUBSANACIÓN DE LA DOCUMENTACIÓN</th>
                     <th class="border border-usco-gris-lighter p-3 text-left font-usco-bold text-sm">FECHA PUBLICACIÓN DE LA LIQUIDACIÓN</th>
                     <th class="border border-usco-gris-lighter p-3 text-left font-usco-bold text-sm">FECHA PAGO DE LA LIQUIDACIÓN</th>
                   </tr>
@@ -985,21 +959,25 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
                 <tbody>
                   <tr class="hover:bg-usco-gris-pale">
                     <td class="border border-usco-gris-lighter p-3 font-usco-bold text-usco-vino">PRIMER LLAMADO</td>
-                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">DEL 20 DE JUNIO (horas de la tarde) HASTA EL 23 DE JUNIO DE 2025.</td>
-                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">JUEVES 3 DE JULIO DE 2025.</td>
-                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">JUEVES 3 DE JULIO HASTA EL DOMINGO 6 DE JULIO DE 2025.</td>
+                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">DEL 13 AL 17 DE NOVIEMBRE DE 2025</td>
+                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">DEL 22 AL 25 DE NOVIEMBRE DE 2025</td>
+                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">28 DE NOVIEMBRE DE 2025</td>
+                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">DEL 29 DE NOVIEMBRE AL 2 DE DICIEMBRE DE 2025</td>
+
                   </tr>
                   <tr class="bg-usco-gris-pale bg-opacity-50 hover:bg-usco-gris-pale">
                     <td class="border border-usco-gris-lighter p-3 font-usco-bold text-usco-vino">SEGUNDO LLAMADO</td>
-                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">VIERNES 11, SÁBADO 12 Y DOMINGO 13 DE JULIO DE 2025.</td>
-                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">SÁBADO 19 DE JULIO DE 2025.</td>
-                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">SÁBADO 19 DE JULIO HASTA EL LUNES 21 DE JULIO DE 2025.</td>
+                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">DEL 9 AL 11 DE DICIEMBRE DE 2025</td>
+                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">17 Y 18 DE DICIEMBRE DE 2025</td>
+                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">23 DE DICIEMBRE DE 2025</td>
+                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">DEL 23 AL 28 DE DICIEMBRE DE 2025</td>
                   </tr>
                   <tr class="hover:bg-usco-gris-pale">
                     <td class="border border-usco-gris-lighter p-3 font-usco-bold text-usco-vino">ÚLTIMO LLAMADO</td>
-                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">JUEVES 24 DE JULIO DE 2025.</td>
-                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">MARTES 29 DE JULIO DE 2025.</td>
-                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">MIÉRCOLES 30 DE JULIO DE 2025.</td>
+                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">DEL 16 AL 18 DE ENERO DE 2026</td>
+                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">DEL 20 AL 22 DE ENERO DE 2026</td>
+                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">27 DE ENERO DE 2026</td>
+                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">27 Y 28 DE ENERO DE 2026</td>
                   </tr>
                 </tbody>
               </table>
@@ -1024,7 +1002,7 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
         </div>
       `,
       'academica': `
-        <h3 class="text-xl font-usco-condensed-bold mb-4 text-usco-vino">6. Matrícula Académica</h3>
+        <h3 class="text-xl font-usco-condensed-bold mb-4 text-usco-vino">5.6 Matrícula Académica</h3>
         <div class="space-y-4 text-usco-gris-dark font-usco">
           
           <div class="bg-usco-vino-pale p-4 rounded-lg border-l-4 border-usco-vino">
@@ -1034,28 +1012,41 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
 
           <p>Una vez la oficina de Registro y Control Académico verifique el cumplimiento de los documentos exigidos para la Matrícula Académica, generará el <strong>ACTA DE MATRÍCULA</strong>, documento que oficializa la calidad de Estudiante de la Universidad Surcolombiana. El mismo será enviado directamente al correo registrado en el formulario de inscripción.</p>
 
-          <div class="bg-usco-ocre-pale p-4 rounded-lg border-l-4 border-usco-ocre-dark text-center">
-            <h4 class="font-usco-bold text-usco-vino mb-2">FECHAS DE MATRÍCULA ACADÉMICA</h4>
-            <p class="font-usco-bold text-lg">LUNES 7 DE JULIO HASTA EL MIÉRCOLES 9 DE JULIO DE 2025</p>
-          </div>
+            <h3 class="font-usco-bold text-usco-vino mb-4 text-xl text-center">FECHAS DE MATRÍCULA ACADÉMICA</h3>
 
-          <div class="bg-red-50 border-l-4 border-red-500 p-4 rounded-lg">
-            <h4 class="font-usco-bold text-red-700 mb-3">IMPORTANTE</h4>
-            <p class="text-red-700 text-sm mb-3">Cuando el aspirante es admitido(a) en un Segundo Llamado o Último Llamado, a otro Programa Académico y tiene legalizada la Matrícula Financiera y Académica, pero desea acogerse a un nuevo Llamado deberá:</p>
+<table class="min-w-full border-collapse border border-usco-gris-lighter mt-4 mb-4" style="min-width: 800px;"
+  <thead>
+    <tr class="bg-usco-gris-pale">
+      <th class="border border-usco-gris-lighter p-3 text-left font-usco-bold text-usco-vino">PRIMER LLAMADO</th>
+      <th class="border border-usco-gris-lighter p-3 text-left font-usco-bold text-usco-vino">SEGUNDO LLAMADO</th>
+      <th class="border border-usco-gris-lighter p-3 text-left font-usco-bold text-usco-vino">ÚLTIMO LLAMADO</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark">DEL 2 AL 4 DE DICIEMBRE DE 2025</td>
+      <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark">29 Y 30 DE DICIEMBRE DE 2025</td>
+      <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark">28 Y 29 DE ENERO DE 2026</td>
+    </tr>
+  </tbody>
+</table>
+          <div class="bg-usco-gris-pale border-l-4 border-usco-gris-lighter p-4 rounded-lg">
+            <h4 class="font-usco-bold text-usco-vino mb-3">IMPORTANTE</h4>
+            <p class="text-usco-gris-dark text-sm mb-3">Cuando el aspirante es admitido(a) en un Segundo Llamado o Último Llamado, a otro Programa Académico y tiene legalizada la Matrícula Financiera y Académica, pero desea acogerse a un nuevo Llamado deberá:</p>
             
-            <ul class="space-y-2 text-sm text-red-700">
+            <ul class="space-y-2 text-sm text-usco-gris-dark">
               <li class="flex items-start">
-                <span class="text-red-700 mr-2 font-bold flex-shrink-0">1)</span>
+                <span class="text-usco-vino mr-2 font-bold flex-shrink-0">1)</span>
                 <span>Informar por escrito a la Oficina de Liquidación de Derechos Pecuniarios y Registro Control Académico, la voluntad de acogerse al nuevo llamado adicional, para que se genere a su nombre una nueva liquidación de Matrícula Financiera y compensación de pagos en el nuevo Programa Académico.</span>
               </li>
               <li class="flex items-start">
-                <span class="text-red-700 mr-2 font-bold flex-shrink-0">2)</span>
+                <span class="text-usco-vino mr-2 font-bold flex-shrink-0">2)</span>
                 <span>El Aspirante que se acoja al nuevo llamado, deberá cumplir con todo el trámite de Matrícula Financiera y Académica, es decir, subir nuevamente los documentos exigidos en el enlace de Admisión al nuevo Programa; generar el Comprobantes y realizar según sea el caso, el pago de la Matrícula Financiera, para que posteriormente la Oficina de Registro y Control, proceda a realizar la Matrícula Académica en las fechas establecidas.</span>
               </li>
             </ul>
             
-            <div class="mt-3 p-3 bg-red-100 rounded">
-              <p class="text-red-800 text-sm font-bold">NOTA: De no realizar el trámite establecido en los numerales anteriores, se entenderá que no acepta el nuevo llamado y continuará en el Programa Académico inicialmente matriculado.</p>
+            <div class="mt-3 p-3 bg-usco-gris-pale rounded">
+              <p class="text-usco-vino text-sm font-bold">NOTA: De no realizar el trámite establecido en los numerales anteriores, se entenderá que no acepta el nuevo llamado y continuará en el Programa Académico inicialmente matriculado.</p>
             </div>
           </div>
         </div>
