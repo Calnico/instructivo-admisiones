@@ -581,7 +581,7 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
   private setNewIconInfo(iconType: string) {
     const iconInfoMap: { [key: string]: string } = {
       'pin': `
-        <h3 class="text-xl font-usco-condensed-bold mb-4 text-usco-vino">5.1 COMPRE EL PIN</h3>
+        <h3 class="text-xl font-usco-condensed-bold mb-4 text-usco-vino">5.1 Compre el Pin</h3>
         <div class="space-y-4 text-usco-gris-dark font-usco">
           <p>Aspirante, es importante que tenga en cuenta la fecha, valor y link para el pago del Derecho de Inscripción (PIN).</p>
           
