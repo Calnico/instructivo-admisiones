@@ -959,25 +959,25 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
                 <tbody>
                   <tr class="hover:bg-usco-gris-pale">
                     <td class="border border-usco-gris-lighter p-3 font-usco-bold text-usco-vino">PRIMER LLAMADO</td>
-                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">DEL 13 AL 17 DE NOVIEMBRE DE 2025</td>
-                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">DEL 22 AL 25 DE NOVIEMBRE DE 2025</td>
-                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">28 DE NOVIEMBRE DE 2025</td>
-                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">DEL 29 DE NOVIEMBRE AL 2 DE DICIEMBRE DE 2025</td>
+                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm"><strong>DEL 13 AL 17 DE NOVIEMBRE DE 2025</strong></td>
+                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm"><strong>DEL 22 AL 25 DE NOVIEMBRE DE 2025</strong></td>
+                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm"><strong>28 DE NOVIEMBRE DE 2025</strong></td>
+                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm"><strong>DEL 29 DE NOVIEMBRE AL 2 DE DICIEMBRE DE 2025</strong></td>
 
                   </tr>
                   <tr class="bg-usco-gris-pale bg-opacity-50 hover:bg-usco-gris-pale">
                     <td class="border border-usco-gris-lighter p-3 font-usco-bold text-usco-vino">SEGUNDO LLAMADO</td>
-                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">DEL 9 AL 11 DE DICIEMBRE DE 2025</td>
-                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">17 Y 18 DE DICIEMBRE DE 2025</td>
-                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">23 DE DICIEMBRE DE 2025</td>
-                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">DEL 23 AL 28 DE DICIEMBRE DE 2025</td>
+                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm"><strong>DEL 9 AL 11 DE DICIEMBRE DE 2025</strong></td>
+                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm"><strong>17 Y 18 DE DICIEMBRE DE 2025</strong></td>
+                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm"><strong>23 DE DICIEMBRE DE 2025</strong></td>
+                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm"><strong>DEL 23 AL 28 DE DICIEMBRE DE 2025</strong></td>
                   </tr>
                   <tr class="hover:bg-usco-gris-pale">
                     <td class="border border-usco-gris-lighter p-3 font-usco-bold text-usco-vino">ÚLTIMO LLAMADO</td>
-                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">DEL 16 AL 18 DE ENERO DE 2026</td>
-                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">DEL 20 AL 22 DE ENERO DE 2026</td>
-                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">27 DE ENERO DE 2026</td>
-                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm">27 Y 28 DE ENERO DE 2026</td>
+                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm"><strong>DEL 16 AL 18 DE ENERO DE 2026</strong></td>
+                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm"><strong>DEL 20 AL 22 DE ENERO DE 2026</strong></td>
+                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm"><strong>27 DE ENERO DE 2026</strong></td>
+                    <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark text-sm"><strong>27 Y 28 DE ENERO DE 2026</strong></td>
                   </tr>
                 </tbody>
               </table>
@@ -1006,7 +1006,7 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
         <div class="space-y-4 text-usco-gris-dark font-usco">
           
           <div class="bg-usco-vino-pale p-4 rounded-lg border-l-4 border-usco-vino">
-            <h4 class="font-usco-bold text-usco-vino mb-2">MATRÍCULA ACADÉMICA - PRIMER LLAMADO</h4>
+            <h4 class="font-usco-bold text-usco-vino mb-2">MATRÍCULA ACADÉMICA</h4>
             <p class="text-sm">En su calidad de admitido(a) adquirió la responsabilidad de cargar todos los documentos exigidos en la Etapa 1: Matrícula Financiera, de los cuales algunos corresponden a la Matrícula Académica; sin embargo, en las fechas establecidas para la matrícula deberá estar pendiente del correo que indicó en el Formulario de Inscripción, en caso de subsanar algún documento.</p>
           </div>
 
@@ -1024,9 +1024,9 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
   </thead>
   <tbody>
     <tr>
-      <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark">DEL 2 AL 4 DE DICIEMBRE DE 2025</td>
-      <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark">29 Y 30 DE DICIEMBRE DE 2025</td>
-      <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark">28 Y 29 DE ENERO DE 2026</td>
+      <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark"><strong>DEL 2 AL 4 DE DICIEMBRE DE 2025</strong></td>
+      <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark"><strong>29 Y 30 DE DICIEMBRE DE 2025</strong></td>
+      <td class="border border-usco-gris-lighter p-3 text-usco-gris-dark"><strong>28 Y 29 DE ENERO DE 2026</strong> </td>
     </tr>
   </tbody>
 </table>
