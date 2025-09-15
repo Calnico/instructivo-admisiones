@@ -674,7 +674,7 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
                 <div>
                   <span class="font-usco-bold">Ingresos mensuales de quien depende económicamente el aspirante:</span> Deberá presentar uno de los siguientes documentos según corresponda:
                   <ul class="mt-2 ml-4 space-y-1">
-                    <li>a). Declaración de Renta año 2023.</li>
+                    <li>a). Declaración de Renta año 2024.</li>
                     <li>b). Certificado de Ingresos y Retenciones del año 2024 de los Padres.</li>
                     <li>c). Formulario Guía de NO Declarante, del año gravable 2024</li>
                   </ul>
@@ -727,6 +727,13 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
                 <span>Una vez grabe la información del formulario de inscripción, el sistema no permite correcciones o modificaciones.</span>
               </li>
             </ul>
+          </div>
+                              <div class="text-center mb-4">
+            <a href="https://gaitana.usco.edu.co/inscripciones_pregrado/login" 
+               target="_blank" 
+               class="inline-block bg-usco-vino hover:bg-usco-vino-dark text-white px-6 py-3 rounded-lg transition-colors duration-200 font-usco-bold text-sm shadow-lg hover:shadow-xl">
+              DILIGENCIE EL FORMULARIO DE INSCRIPCIÓN
+            </a>
           </div>
           </div>
         </div>
@@ -856,7 +863,7 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
                 <div>
                   <span class="font-usco-bold">Ingresos de quien(es) depende económicamente el aspirante admitido(a)</span> (uno de los tres documentos, identificados con a, b, c.):
                   <ul class="mt-2 ml-4 space-y-1 text-xs">
-                    <li><strong>a)</strong> Copia de la Declaración de Renta y Patrimonio del año gravable 2023, si es contribuyente, debidamente firmada y con la relación de personas a cargo.</li>
+                    <li><strong>a)</strong> Copia de la Declaración de Renta y Patrimonio del año gravable 2024, si es contribuyente, debidamente firmada y con la relación de personas a cargo.</li>
                     <li><strong>b)</strong> Certificado de Ingresos y Retenciones por Rentas de trabajo y de pensiones del año 2024. Debe estar debidamente firmado por el trabajador, con la relación de las personas a su cargo. Aplica a contribuyentes exentos de la obligación de presentar Declaración de Renta, con empleo formal, expedido por el empleador - Formulario 220 – DIAN.</li>
                     <li><strong>c)</strong> Formato Guía Para No Declarante. Corresponde al Certificado de los INGRESOS ANUALES, del año 2024. Aplica para trabajadores independientes, empleo informal, no obligados a declarar renta; debe estar firmado y contener la relación de las personas a cargo.</li>
                   </ul>
