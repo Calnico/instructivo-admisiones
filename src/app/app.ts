@@ -31,7 +31,6 @@ export class App implements AfterViewInit {
   protected isBrowser = signal(false);
   protected currentPdfUrl = signal<string | null>(null);
   protected selectedPdfIndex = signal<number>(0);
-  protected safePdfUrl = signal<SafeResourceUrl | null>(null);
   protected showSteps = signal<boolean>(true);
   protected visibleTerms = signal(false);
   protected closingTerms = signal(false);
@@ -70,17 +69,15 @@ export class App implements AfterViewInit {
   selectPdf(index: number, url: string) {
     this.selectedPdfIndex.set(index);
     this.currentPdfUrl.set(url);
-    // Crear URL segura para Angular
-    this.safePdfUrl.set(this.sanitizer.bypassSecurityTrustResourceUrl(url));
+  }
+
+  sanitizePdfUrl(url: string): SafeResourceUrl {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
 
   selectModalidad(index: number) {
     this.selectedModalidadIndex.set(index);
     this.selectedAcordeonIndex.set(null); // Reset acordeón al cambiar modalidad
-  }
-
-  sanitizeModalidadPdfUrl(url: string) {
-    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
 
   toggleAcordeon(index: number) {
@@ -729,7 +726,7 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
             </ul>
           </div>
                               <div class="text-center mb-4">
-            <a href="https://gaitana.usco.edu.co/inscripciones_pregrado/login" 
+            <a href="https://gaitana.usco.edu.co/inscripciones_pregrado/inicio-sesion" 
                target="_blank" 
                class="inline-block bg-usco-vino hover:bg-usco-vino-dark text-white px-6 py-3 rounded-lg transition-colors duration-200 font-usco-bold text-sm shadow-lg hover:shadow-xl">
               DILIGENCIE EL FORMULARIO DE INSCRIPCIÓN
@@ -778,7 +775,7 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
           </div>
 
           <div class="text-center">
-            <a href="https://gaitana.usco.edu.co/inscripciones_pregrado/listado" target="_blank" class="inline-block bg-usco-vino hover:bg-usco-vino-dark text-white px-6 py-3 rounded-lg transition-colors duration-200 font-usco-bold text-sm shadow-lg hover:shadow-xl">
+            <a href="https://gaitana.usco.edu.co/inscripciones_pregrado/listado-inscritos" target="_blank" class="inline-block bg-usco-vino hover:bg-usco-vino-dark text-white px-6 py-3 rounded-lg transition-colors duration-200 font-usco-bold text-sm shadow-lg hover:shadow-xl">
               VERIFICAR ESTADO DE INSCRIPCIÓN Y CERTIFICADO
             </a>
           </div>

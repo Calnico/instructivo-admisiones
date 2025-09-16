@@ -142,10 +142,10 @@
             <!-- Visor PDF con embed simple (como en PHP) -->
             <div class="border rounded bg-white p-4">
               <!-- Embed PDF directo -->
-              <embed 
-                [src]="safePdfUrl()" 
-                width="98%" 
-                height="630" 
+              <embed
+                [src]="sanitizePdfUrl(currentPdfUrl()!)"
+                width="98%"
+                height="630"
                 type="application/pdf"
                 class="rounded border" />
             </div>
@@ -200,10 +200,10 @@
           
           <div *ngIf="selectedStep()!.modalidades![selectedModalidadIndex()].pdf && isBrowser()">
             <div class="border rounded bg-white p-4">
-              <embed 
-                [src]="sanitizeModalidadPdfUrl(selectedStep()!.modalidades![selectedModalidadIndex()].pdf!)" 
-                width="98%" 
-                height="630" 
+              <embed
+                [src]="sanitizePdfUrl(selectedStep()!.modalidades![selectedModalidadIndex()].pdf!)"
+                width="98%"
+                height="630"
                 type="application/pdf"
                 class="rounded border" />
             </div>
