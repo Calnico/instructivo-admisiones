@@ -164,7 +164,7 @@ La Universidad otorgará un (1) cupo especial en cada uno de los Programas de Pr
               titulo: '1. Comunidades Negras, Afrocolombianas, Raizales y Palanqueras',
               contenido: `**ENTREGA DE DOCUMENTOS** El aspirante que pertenezca y se inscriba por este régimen especial, debe entregar el documento oficial expedido por el Ministerio del Interior que acredite la condición, el cual debe tener una vigencia de expedición no mayor de tres (3) meses a la fecha de presentación en la Universidad. Adicionalmente, debe adjuntar el respectivo certificado de inscripción. Estos deben entregarse en la oficina de Registro y Control Académico de la sede central de la Universidad Surcolombiana o a través del correo: <a href="mailto:registro@usco.edu.co" class="underline text-blue-600">registro@usco.edu.co</a>
 
-**FECHAS ENTREGA DE DOCUMENTOS** <span class="text-blue-900 font-bold">DEL 15 DE SEPTIEMBRE AL <strike>28 DE OCTUBRE</strike><span class="text-green-600"> 5 DE NOVIEMBRE</span> DE 2025 A LAS 6:00 P.M.</span>
+**FECHAS ENTREGA DE DOCUMENTOS** <span class="text-blue-900 font-bold">DEL 15 DE SEPTIEMBRE AL <strike>28 DE OCTUBRE</strike><span class="text-green-600 text-lg"> 5 DE NOVIEMBRE</span> DE 2025 A LAS 6:00 P.M.</span>
 
 **PARA TENER EN CUENTA** El aspirante deberá entregar la documentación completa y en los términos que aquí se detallan. Si el aspirante no presenta la documentación completa en las fechas establecidas, no será tenido en cuenta dentro del proceso de selección y admisión. La Universidad no se hace responsable por los documentos que no se reciban completos y en los plazos establecidos.`
             },
@@ -172,7 +172,7 @@ La Universidad otorgará un (1) cupo especial en cada uno de los Programas de Pr
               titulo: '2. Desplazados por la Violencia',
               contenido: `**ENTREGA DE DOCUMENTOS** El aspirante que pertenezca y se inscriba por este régimen especial, deberá entregar el documento oficial expedido por la Unidad para la Atención y Reparación Integral a las Víctimas de la Presidencia de la República que acredite la condición, el cual debe tener una vigencia de expedición no mayor de tres (3) meses a la fecha de presentación en la Universidad. Adicionalmente, deberá adjuntar el respectivo certificado de inscripción. Estos deben entregarse en la oficina de Registro y Control Académico de la sede central de la Universidad Surcolombiana o a través del correo: <a href="mailto:registro@usco.edu.co" class="underline text-blue-600">registro@usco.edu.co</a>
 
-**FECHAS ENTREGA DE DOCUMENTOS** <span class="text-blue-900 font-bold">DEL 15 DE SEPTIEMBRE AL <strike>28 DE OCTUBRE</strike><span class="text-green-600"> 5 DE NOVIEMBRE</span> DE 2025 A LAS 6:00 P.M.</span>
+**FECHAS ENTREGA DE DOCUMENTOS** <span class="text-blue-900 font-bold">DEL 15 DE SEPTIEMBRE AL <strike>28 DE OCTUBRE</strike><span class="text-green-600 text-lg"> 5 DE NOVIEMBRE</span> DE 2025 A LAS 6:00 P.M.</span>
 
 **PARA TENER EN CUENTA** El aspirante deberá entregar la documentación completa y en los términos que aquí se detallan. Si el aspirante no presenta la documentación completa en las fechas establecidas para ello, no será tenido en cuenta dentro del proceso de selección y admisión. La Universidad no se hace responsable por los documentos que no se reciban completos y en los plazos establecidos.`
             },
@@ -182,7 +182,7 @@ La Universidad otorgará un (1) cupo especial en cada uno de los Programas de Pr
 
 **ENTREGA DE DOCUMENTOS** El aspirante que pertenezca y se inscriba por este régimen especial, deberá entregar la certificación expedida por la Agencia para la Reincorporación y la Normalización - ARN, con el fin de acreditar su condición. El documento debe tener una vigencia de expedición no mayor a tres (3) meses a la fecha de presentación en la Universidad. Adicionalmente, deberá adjuntar el respectivo certificado de inscripción. Estos deben entregarse en la oficina de Registro y Control Académico de la sede central de la Universidad Surcolombiana o a través del correo: <a href="mailto:registro@usco.edu.co" class="underline text-blue-600">registro@usco.edu.co</a>
 
-**FECHAS ENTREGA DE DOCUMENTOS** <span class="text-blue-900 font-bold">DEL 15 DE SEPTIEMBRE AL <strike>28 DE OCTUBRE</strike><span class="text-green-600"> 5 DE NOVIEMBRE</span> DE 2025 A LAS 6:00 P.M.</span>
+**FECHAS ENTREGA DE DOCUMENTOS** <span class="text-blue-900 font-bold">DEL 15 DE SEPTIEMBRE AL <strike>28 DE OCTUBRE</strike><span class="text-green-600 text-lg"> 5 DE NOVIEMBRE</span> DE 2025 A LAS 6:00 P.M.</span>
 
 **PARA TENER EN CUENTA** El aspirante deberá entregar la documentación completa y en los términos que aquí se detallan. Si el aspirante no presenta la documentación completa en las fechas establecidas para ello, no será tenido en cuenta dentro del proceso de selección y admisión. La Universidad no se hace responsable por los documentos que no se reciban completos y en los plazos establecidos.`
             },
@@ -197,9 +197,9 @@ El Consejo Académico en el <a href="https://www.usco.edu.co/archivosUsuarios/21
 a). Presentar el documento expedido por el Ministerio del Interior que certifique su registro en el Censo de la comunidad indígena respectiva.
 b). O presentar "certificado de pertenencia de la comunidad indígena", con una vigencia no mayor a 3 meses, firmado por la autoridad registrada ante la Dirección de Asuntos Indígenas, ROM y Minorías del Ministerio del Interior para el año en curso, en donde, además, deberá señalarse el correo electrónico de la Comunidad Indígena, el cual debe estar activo y ser un único correo institucional de uso de la Autoridad Tradicional, si lo tuviere.
 
-**FECHAS ENTREGA DE DOCUMENTOS** <span class="text-blue-900 font-bold">DEL 15 DE SEPTIEMBRE AL <strike>28 DE OCTUBRE</strike><span class="text-green-600"> 5 DE NOVIEMBRE</span> DE 2025 A LAS 6:00 P.M.</span> deben ser entregados por el aspirante en la oficina de Registro y Control Académico de la sede central de la Universidad Surcolombiana o a través del correo: <a href="mailto:registro@usco.edu.co" class="underline text-blue-600">registro@usco.edu.co</a>, adjuntado el respectivo certificado de inscripción, y el certificado de terminación de estudios de bachillerato en una institución educativa indígena (si es su caso), dentro del periodo de inscripciones de la presente convocatoria.
+**FECHAS ENTREGA DE DOCUMENTOS** <span class="text-blue-900 font-bold">DEL 15 DE SEPTIEMBRE AL <strike>28 DE OCTUBRE</strike><span class="text-green-600 text-lg"> 5 DE NOVIEMBRE</span> DE 2025 A LAS 6:00 P.M.</span> deben ser entregados por el aspirante en la oficina de Registro y Control Académico de la sede central de la Universidad Surcolombiana o a través del correo: <a href="mailto:registro@usco.edu.co" class="underline text-blue-600">registro@usco.edu.co</a>, adjuntado el respectivo certificado de inscripción, y el certificado de terminación de estudios de bachillerato en una institución educativa indígena (si es su caso), dentro del periodo de inscripciones de la presente convocatoria.
 
-**FECHA PRESENTACIÓN PRUEBA** <span class="text-blue-900 font-bold"><strike>Miercoles 29 DE OCTUBRE</strike><span class="text-green-600"> Jueves 6 de NOVIEMBRE</span> de 2025 a las 8:00 A.M.</span> en el tercer piso de la Biblioteca de la Sede Central ubicada en Neiva. Los aspirantes que se inscriban bajo esta modalidad deberán presentar la prueba oral sobre el manejo del idioma indígena propio y/o prueba sobre realidad y cultura Indígena.
+**FECHA PRESENTACIÓN PRUEBA** <span class="text-blue-900 font-bold"><strike>Miercoles 29 DE OCTUBRE</strike><span class="text-green-600 text-lg"> Jueves 6 de NOVIEMBRE</span> de 2025 a las 8:00 A.M.</span> en el tercer piso de la Biblioteca de la Sede Central ubicada en Neiva. Los aspirantes que se inscriban bajo esta modalidad deberán presentar la prueba oral sobre el manejo del idioma indígena propio y/o prueba sobre realidad y cultura Indígena.
 
 **PARA TENER EN CUENTA** La Universidad podrá verificar la veracidad de la información suministrada con el apoyo del CRIHU, también se apoyará en organizaciones indígenas de reconocida trayectoria y el Ministerio del Interior - Dirección de Asuntos Indígenas o quien haga sus veces.
 
@@ -220,7 +220,7 @@ b). Certificado de inscripción.
 c). Certificado en donde conste que cumplió con el ciclo complementario y el reporte de las calificaciones obtenidas.
 d). Examen de Estado para ingreso a la educación superior ICFES.
 
-**FECHAS ENTREGA DE DOCUMENTOS** <span class="text-blue-900 font-bold">DEL 15 DE SEPTIEMBRE AL <strike>28 DE OCTUBRE</strike><span class="text-green-600"> 5 DE NOVIEMBRE</span> DE 2025 A LAS 6:00 P.M.</span>
+**FECHAS ENTREGA DE DOCUMENTOS** <span class="text-blue-900 font-bold">DEL 15 DE SEPTIEMBRE AL <strike>28 DE OCTUBRE</strike><span class="text-green-600 text-lg"> 5 DE NOVIEMBRE</span> DE 2025 A LAS 6:00 P.M.</span>
 
 **CORREOS ELECTRÓNICOS DE LOS PROGRAMAS DE LA FACULTAD DE EDUCACIÓN**
 
@@ -249,7 +249,7 @@ d). Anexar certificado de calificaciones expedido por la Oficina de Registro y C
 e). No estar desvinculado por más de un (1) año de la Universidad de origen.
 f). Tener aprobadas todas las asignaturas hasta el semestre cursado.
 
-**FECHAS ENTREGA DE DOCUMENTOS** <span class="text-blue-900 font-bold">DEL 15 DE SEPTIEMBRE AL <strike>28 DE OCTUBRE</strike><span class="text-green-600"> 5 DE NOVIEMBRE</span> DE 2025 A LAS 6:00 P.M.</span>
+**FECHAS ENTREGA DE DOCUMENTOS** <span class="text-blue-900 font-bold">DEL 15 DE SEPTIEMBRE AL <strike>28 DE OCTUBRE</strike><span class="text-green-600 text-lg"> 5 DE NOVIEMBRE</span> DE 2025 A LAS 6:00 P.M.</span>
 
 **Correos electrónicos de los programas académicos que aceptan transferencia académica en el PERIODO 2026-1**
 
