@@ -13,7 +13,8 @@
     <p class="text-center text-black text-2xl font-usco mb-6">
       <strong>Bienvenido(a) apreciado(a) aspirante a la Universidad Surcolombiana, <br>reciba un cordial saludo.</strong>
     </p>
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
+    <!-- Primera fila: Los 3 acuerdos -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-6xl mx-auto mb-4">
       <a href="documents/ACUERDO-CA-016-2025.pdf" target="_blank"
        class="bg-gray-700 hover:bg-gray-800 text-white font-usco-bold py-4 px-6 rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl text-center block">
         Acuerdo CA 016 del 09 de septiembre de 2025
@@ -22,6 +23,14 @@
        class="bg-gray-700 hover:bg-gray-800 text-white font-usco-bold py-4 px-6 rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl text-center block">
         Acuerdo CA 021 del 02 de octubre de 2025
       </a>
+      <a href="documents/ACUERDO-CA-023-2025.pdf" target="_blank"
+       class="bg-gray-700 hover:bg-gray-800 text-white font-usco-bold py-4 px-6 rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl text-center block">
+        Acuerdo CA 023 del 14 de octubre de 2025
+      </a>
+    </div>
+    
+    <!-- Segunda fila: Términos y Preguntas Frecuentes -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-6xl mx-auto">
       <button (click)="showTermsDialog()" class="bg-gray-700 hover:bg-gray-800 text-white font-usco-bold py-4 px-6 rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl text-center cursor-pointer">
         Términos de referencia legal del proceso de admisiones
       </button>
@@ -94,6 +103,30 @@
               [alt]="step.title"
               class="w-full h-auto rounded-3xl object-cover"
             />
+          </div>
+        </div>
+        
+        <!-- Aviso especial entre paso 4 y 5 -->
+        <div *ngIf="step.number === 4" class="mb-8" id="atencion-container">
+          <div class="flex items-center">
+            <!-- Espaciador para alinear con los banners -->
+            <div class="w-8 h-8 md:w-12 md:h-12 mr-4 md:mr-12 flex-shrink-0"></div>
+            <div class="hidden md:flex text-6xl mr-16 flex-shrink-0 w-8"></div>
+            
+            <!-- Recuadro del aviso tipo acordeón -->
+            <div class="border-2 border-gray-300 rounded-lg bg-white shadow-lg flex-1 overflow-hidden transition-all duration-700 ease-in-out"
+                 [ngStyle]="{'max-height': atencionVisible() ? '500px' : '0px', 'padding': atencionVisible() ? '1.5rem' : '0rem', 'border-width': atencionVisible() ? '2px' : '0px'}">
+              <div class="transition-opacity duration-500"
+                   [ngClass]="{'opacity-100': atencionVisible(), 'opacity-0': !atencionVisible()}">
+                <h3 class="text-red-600 font-usco-bold text-xl mb-4">¡ATENCIÓN!</h3>
+                <p class="text-base text-gray-800 font-usco leading-relaxed mb-4">
+                  Los admitidos que en el momento de adjuntar los documentos, del <strong>18 al 23 de noviembre de 2025</strong>, no hayan obtenido el grado de bachiller, deben adjuntar: <strong>certificado de la institución educativa que indique fecha y entrega del título de bachiller</strong>. El diploma o acta de grado es un documento obligatorio para la matrícula académica, entre el <strong>9 y 10 de diciembre de 2025</strong>, y deberán enviarlo a través del correo.
+                </p>
+                <p class="text-base text-red-600 font-usco-bold leading-relaxed">
+                  Quien no envíe uno de estos documentos, perderá el cupo.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

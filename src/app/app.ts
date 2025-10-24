@@ -43,6 +43,7 @@ export class App implements AfterViewInit {
   protected activeIcon = signal<string | null>(null);
   protected closingIconPanel = signal(false);
   protected openingIconPanel = signal(false);
+  protected atencionVisible = signal(false);
   
   private platformId = inject(PLATFORM_ID);
   private sanitizer = inject(DomSanitizer);
@@ -54,6 +55,36 @@ export class App implements AfterViewInit {
   ngAfterViewInit() {
     if (this.isBrowser()) {
       this.loadPdfJs();
+      this.setupScrollObserver();
+    }
+  }
+  
+  private setupScrollObserver() {
+    if (this.isBrowser()) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            // Solo cambiar el estado si está claramente dentro o fuera
+            if (entry.intersectionRatio > 0.5) {
+              this.atencionVisible.set(true);
+            } else if (entry.intersectionRatio < 0.2) {
+              this.atencionVisible.set(false);
+            }
+          });
+        },
+        {
+          threshold: [0, 0.2, 0.5, 0.8, 1], // Múltiples umbrales para mejor control
+          rootMargin: '0px' // Sin margen adicional
+        }
+      );
+
+      // Observar el contenedor después de un pequeño delay para asegurar que el DOM esté listo
+      setTimeout(() => {
+        const container = document.getElementById('atencion-container');
+        if (container) {
+          observer.observe(container);
+        }
+      }, 100);
     }
   }
   
