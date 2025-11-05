@@ -757,10 +757,9 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
             </ul>
           </div>
                               <div class="text-center mb-4">
-            <a href="https://gaitana.usco.edu.co/inscripciones_pregrado/inicio-sesion" 
-               target="_blank" 
-               class="inline-block bg-usco-vino hover:bg-usco-vino-dark text-white px-6 py-3 rounded-lg transition-colors duration-200 font-usco-bold text-sm shadow-lg hover:shadow-xl">
-              DILIGENCIE EL FORMULARIO DE INSCRIPCIÓN
+            <a 
+               class="inline-block bg-usco-vino hover:bg-usco-vino-dark text-white px-6 py-3 rounded-lg transition-colors duration-200 font-usco-bold text-4xl shadow-lg hover:shadow-xl">
+              PROCESO DE INSCRIPCIÓN CERRADO
             </a>
           </div>
           </div>
