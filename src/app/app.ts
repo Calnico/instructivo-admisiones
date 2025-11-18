@@ -865,8 +865,15 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
         </div>
       `,
       'financiera': `
-        <h3 class="text-xl font-usco-condensed-bold mb-4 text-usco-vino">5.5 Matrícula Financiera</h3>
+        <h3 class="text-xl font-usco-condensed-bold mb-4 text-usco-vino">5.5 Diligencie el Formulario de Admitidos: Matrícula Financiera</h3>
         <div class="space-y-4 text-usco-gris-dark font-usco">
+          
+          <div class="flex justify-center my-6">
+            <a href="https://gaitana.usco.edu.co/inscripciones_pregrado_documentos/login" target="_blank" class="bg-usco-vino hover:bg-usco-vino-dark text-white font-usco-bold text-2xl px-16 py-6 rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+              DILIGENCIE AQUÍ
+            </a>
+          </div>
+          
           <p>Documentación requerida para la liquidación de Matrícula, cronograma y fechas de pago.</p>
           
           <div class="bg-usco-vino-pale p-4 rounded-lg border-l-4 border-usco-vino">
