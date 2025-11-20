@@ -869,7 +869,7 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
         <div class="space-y-4 text-usco-gris-dark font-usco">
           
           <div class="flex justify-center my-6">
-            <a href="https://gaitana.usco.edu.co/inscripciones_pregrado_documentos/login" target="_blank" class="bg-usco-vino hover:bg-usco-vino-dark text-white font-usco-bold text-2xl px-16 py-6 rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+            <a href="https://gaitana.usco.edu.co/admitidos/inicio-sesion" target="_blank" class="bg-usco-vino hover:bg-usco-vino-dark text-white font-usco-bold text-2xl px-16 py-6 rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
               DILIGENCIE AQUÍ
             </a>
           </div>
