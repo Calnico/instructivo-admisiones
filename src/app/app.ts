@@ -899,7 +899,7 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
                   <ul class="mt-2 ml-4 space-y-1 text-xs">
                     <li><strong>a)</strong> Copia de la Declaración de Renta y Patrimonio del año gravable 2024, si es contribuyente, debidamente firmada y con la relación de personas a cargo.</li>
                     <li><strong>b)</strong> Certificado de Ingresos y Retenciones por Rentas de trabajo y de pensiones del año 2024. Debe estar debidamente firmado por el trabajador, con la relación de las personas a su cargo. Aplica a contribuyentes exentos de la obligación de presentar Declaración de Renta, con empleo formal, expedido por el empleador - Formulario 220 – DIAN.</li>
-                    <li><strong>c)</strong> Formato Guía Para No Declarante. Corresponde al Certificado de los INGRESOS ANUALES, del año 2024. Aplica para trabajadores independientes, empleo informal, no obligados a declarar renta; debe estar firmado y contener la relación de las personas a cargo.</li>
+                    <li><strong>c)</strong> Formato Guía Para No Declarante. Corresponde al Certificado de los INGRESOS ANUALES, del año 2024. Aplica para trabajadores independientes, empleo informal, no obligados a declarar renta; debe estar firmado y contener la relación de las personas a cargo.<br> <a href="documents/certificado-de-no-declarante-2026-1.pdf" target="_blank" class="underline text-blue-600">Ver formato</a></li>
                   </ul>
                 </div>
               </li>
@@ -918,6 +918,10 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
               <li class="flex items-start">
                 <span class="text-usco-vino mr-2 text-lg flex-shrink-0">•</span>
                 <span>Certificado de afiliación a la EPS, FOSYGA, ADRES. Debe indicar el estado de afiliación "ACTIVO", con fecha de expedición no mayor a 30 días.</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-usco-vino mr-2 text-lg flex-shrink-0">•</span>
+                <span>Autorización para el Tratamiento de Datos Personales - aspirantes y estudiantes menores de edad. <a href="documents/AUTORIZACION-TRATAMIENTO-DATOS-PERSONALES.pdf" target="_blank" class="underline text-blue-600">Ver formato</a></span>
               </li>
               <li class="flex items-start">
                 <span class="text-usco-vino mr-2 text-lg flex-shrink-0">•</span>
