@@ -333,7 +333,7 @@ f). Tener aprobadas todas las asignaturas hasta el semestre cursado.
       modalidades: [
         { name: 'Ponderaciones por Programa Académico', content: '', pdf: 'documents/PONDERACIONES-PRUEBA-DE-ESTADO.pdf' },
         { name: '3.1 Puntajes de Cierre Programas de Pregrado', content: '', pdf: 'documents/puntajes-de-cierre-2025-1-2025-2.pdf' },
-        { name: '3.2 Simulador de Ponderaciones', content: '**Simulador de ponderaciones**\n\n<a href="https://huacayo.usco.edu.co/ponderados/home/simulator" target="_blank" class="underline text-blue-600">Realice el ejercicio para conocer su puntaje ponderado, según los resultados de las áreas evaluadas por el ICFES.</a> Recuerde que este ejercicio NO GARANTIZA el ingreso a la Universidad Surcolombiana.' }
+        { name: '3.2 Simulador de Ponderaciones', content: '**Simulador de ponderaciones**\n\n<a href="https://sanagustin.usco.edu.co/simulador_ponderados/#/" target="_blank" class="underline text-blue-600">Realice el ejercicio para conocer su puntaje ponderado, según los resultados de las áreas evaluadas por el ICFES.</a> Recuerde que este ejercicio NO GARANTIZA el ingreso a la Universidad Surcolombiana.' }
       ]
     },
     {
