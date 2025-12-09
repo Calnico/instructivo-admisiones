@@ -1055,6 +1055,12 @@ Los aspirantes al Programa de Licenciatura en Educación Artística deberán pre
             <p class="text-sm">En su calidad de admitido(a) adquirió la responsabilidad de cargar todos los documentos exigidos en la Etapa 1: Matrícula Financiera, de los cuales algunos corresponden a la Matrícula Académica; sin embargo, en las fechas establecidas para la matrícula deberá estar pendiente del correo que indicó en el Formulario de Inscripción, en caso de subsanar algún documento.</p>
           </div>
 
+          <p>En caso de que se le solicite subsanar algún documento académico, podrá realizar el proceso ingresando al siguiente enlace:</p>
+          <div class="flex justify-center my-6">
+            <a href="https://gaitana.usco.edu.co/admitidos/inicio-sesion" target="_blank" class="bg-usco-vino hover:bg-usco-vino-dark text-white font-usco-bold text-2xl px-16 py-6 rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+              ACTUALIZAR DOCUMENTOS ACADÉMICOS
+            </a>
+          </div>
           <p>Una vez la oficina de Registro y Control Académico verifique el cumplimiento de los documentos exigidos para la Matrícula Académica, generará el <strong>ACTA DE MATRÍCULA</strong>, documento que oficializa la calidad de Estudiante de la Universidad Surcolombiana. El mismo será enviado directamente al correo registrado en el formulario de inscripción.</p>
 
             <h3 class="font-usco-bold text-usco-vino mb-4 text-xl text-center">FECHAS DE MATRÍCULA ACADÉMICA</h3>
